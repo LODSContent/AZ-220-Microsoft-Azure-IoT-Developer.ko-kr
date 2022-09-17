@@ -2,13 +2,8 @@
 lab:
   title: '랩 19: ADT(Azure Digital Twins) 솔루션 개발'
   module: 'Module 11: Develop with Azure Digital Twins'
-ms.openlocfilehash: 654a98a8b7affffb99e1c88a6c1c9c5a32546488
-ms.sourcegitcommit: 7874419a1f0f346f972914893b4b3644ba84a267
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 03/04/2022
-ms.locfileid: "139262462"
 ---
+
 # <a name="develop-azure-digital-twins-adt-solutions"></a>ADT(Azure Digital Twins) 솔루션 개발
 
 ## <a name="lab-scenario"></a>랩 시나리오
@@ -73,23 +68,23 @@ ms.locfileid: "139262462"
 
     **사용자 지정 배포** 페이지가 표시됩니다.
 
-1. **프로젝트 세부 정보** 의 **구독** 드롭다운에서 이 과정에서 사용할 Azure 구독이 선택되어 있는지 확인합니다.
+1. **프로젝트 세부 정보**의 **구독** 드롭다운에서 이 과정에서 사용할 Azure 구독이 선택되어 있는지 확인합니다.
 
-1. **리소스 그룹** 드롭다운에서 **rg-az220** 을 선택합니다.
+1. **리소스 그룹** 드롭다운에서 **rg-az220**을 선택합니다.
 
-    > **참고**: **rg-az220** 이 목록에 없는 경우:
+    > **참고**: **rg-az220**이 목록에 없는 경우:
     >
-    > 1. **리소스 그룹** 드롭다운에서 **새로 만들기** 를 클릭합니다.
-    > 1. **이름** 아래에서 **rg-az220** 을 입력합니다.
-    > 1. **확인** 을 클릭합니다.
+    > 1. **리소스 그룹** 드롭다운에서 **새로 만들기**를 클릭합니다.
+    > 1. **이름** 아래에서 **rg-az220**을 입력합니다.
+    > 1. **확인**을 클릭합니다.
 
-1. **인스턴스 세부 정보** 의 **지역** 드롭다운에서 가장 가까운 지역을 선택합니다.
+1. **인스턴스 세부 정보**의 **지역** 드롭다운에서 가장 가까운 지역을 선택합니다.
 
     > **참고**: **rg-az220** 그룹이 이미 있는 경우 **지역** 필드는 리소스 그룹에서 사용하는 지역으로 설정되며 읽기 전용입니다.
 
 1. **사용자 ID** 필드에 연습 1에서 만든 고유 ID를 입력합니다.
 
-1. **과정 ID** 필드에 **az220** 을 입력합니다.
+1. **과정 ID** 필드에 **az220**을 입력합니다.
 
 1. 현재 사용자 개체 ID를 확인하려면 **Cloud Shell** 을 열고 다음 명령을 실행합니다.
 
@@ -101,13 +96,13 @@ ms.locfileid: "139262462"
 
 1. **개체 ID** 필드에 위에서 복사한 개체 ID를 입력합니다.
 
-1. 템플릿의 유효성을 검사하려면 **검토 및 만들기** 를 클릭합니다.
+1. 템플릿의 유효성을 검사하려면 **검토 및 만들기**를 클릭합니다.
 
-1. 유효성 검사를 통과하면 **만들기** 를 클릭합니다.
+1. 유효성 검사를 통과하면 **만들기**를 클릭합니다.
 
     배포가 시작됩니다.
 
-1. 배포가 완료되면 왼쪽 탐색 영역에서 템플릿의 출력 값을 검토하려면 **출력** 을 클릭합니다.
+1. 배포가 완료되면 왼쪽 탐색 영역에서 템플릿의 출력 값을 검토하려면 **출력**을 클릭합니다.
 
     나중에 사용할 수 있도록 출력을 기록해 둡니다.
 
@@ -152,37 +147,37 @@ ms.locfileid: "139262462"
 
 1. 새 브라우저 창에서 [Azure Portal](https://portal.azure.com)을 엽니다.
 
-1. Azure Portal 메뉴에서 **+ 리소스 만들기** 를 클릭합니다.
+1. Azure Portal 메뉴에서 **+ 리소스 만들기**를 클릭합니다.
 
     그러면 열리는 **새로 만들기** 블레이드는 Azure Marketplace의 프런트 엔드입니다. Azure Marketplace에서는 Azure에서 만들 수 있는 모든 리소스의 컬렉션이 제공됩니다. 마켓플레이스에는 Microsoft와 커뮤니티의 리소스가 포함되어 있습니다.
 
-1. **Marketplace 검색** 텍스트 상자에 **Azure Digital Twins** 를 입력합니다.
+1. **Marketplace 검색** 텍스트 상자에 **Azure Digital Twins**를 입력합니다.
 
-1. 옵션이 표시되면 **Azure Digital Twins** 를 선택하고 **만들기** 를 클릭합니다.
+1. 옵션이 표시되면 **Azure Digital Twins**를 선택하고 **만들기**를 클릭합니다.
 
-1. **리소스 만들기** 창의 **구독** 에서 이 과정에 사용 중인 구독이 선택되어 있는지 확인합니다.
+1. **리소스 만들기** 창의 **구독**에서 이 과정에 사용 중인 구독이 선택되어 있는지 확인합니다.
 
     > **참고**: 계정에 구독의 관리자 역할이 할당되어 있어야 합니다.
 
-1. **리소스 그룹** 으로 **rg-az220** 를 선택합니다.
+1. **리소스 그룹**으로 **rg-az220**를 선택합니다.
 
-1. **리소스 이름** 으로 **adt-az220-training-{사용자 ID}** 를 입력합니다.
+1. **리소스 이름**으로 **adt-az220-training-{사용자 ID}** 를 입력합니다.
 
 1. **지역** 드롭다운에서 Azure IoT Hub가 프로비저닝된 지역 또는 사용 가능한 가장 가까운 지역을 선택합니다.
 
-1. 현재 사용자가 **Digital Twins Explorer** 앱을 사용할 수 있도록 **리소스에 액세스 권한 부여** 에서 **Azure Digital Twins 소유자 역할 할당** 을 선택합니다.
+1. 현재 사용자가 **Digital Twins Explorer** 앱을 사용할 수 있도록 **리소스에 액세스 권한 부여**에서 **Azure Digital Twins 소유자 역할 할당**을 선택합니다.
 
     > **참고**: 인스턴스 내의 요소를 관리하려면 사용자가 Azure Digital Twins 데이터 평면 API에 액세스할 수 있어야 합니다. 위에서 제안된 역할을 선택하면 현재 사용자에게 데이터 평면 API에 대한 모든 권한이 부여됩니다. 나중에 IAM(Access Control)을 사용하여 적절한 역할을 선택할 수도 있습니다. Azure Digital Twins 보안에 대한 자세한 내용은 [여기](https://docs.microsoft.com/azure/digital-twins/concepts-security)에서 확인할 수 있습니다.
 
-1. 입력한 값을 검토하려면 **검토 + 만들기** 를 클릭합니다.
+1. 입력한 값을 검토하려면 **검토 + 만들기**를 클릭합니다.
 
-1. 배포 프로세스를 시작하려면 **만들기** 를 클릭합니다.
+1. 배포 프로세스를 시작하려면 **만들기**를 클릭합니다.
 
-    **배포 진행 중** 이 표시되는 동안 잠시 기다립니다.
+    **배포 진행 중**이 표시되는 동안 잠시 기다립니다.
 
-1. **리소스로 이동** 을 선택합니다.
+1. **리소스로 이동**을 선택합니다.
 
-    ADT 리소스의 개요 창이 표시됩니다. 이 창에는 제목이 **Azure Digital Twins 시작** 인 본문 섹션이 포함되어 있습니다.
+    ADT 리소스의 개요 창이 표시됩니다. 이 창에는 제목이 **Azure Digital Twins 시작**인 본문 섹션이 포함되어 있습니다.
 
 #### <a name="task-2---save-the-connection-data-to-a-reference-file"></a>작업 2 - 참조 파일에 연결 데이터 저장
 
@@ -190,7 +185,7 @@ ms.locfileid: "139262462"
 
 1. 이 파일에 Azure Digital Twins 인스턴스의 이름인 **adt-az220-training-{사용자 ID}** 를 추가합니다.
 
-1. 이 파일에 리소스 그룹인 **rg-az220** 을 추가합니다.
+1. 이 파일에 리소스 그룹인 **rg-az220**을 추가합니다.
 
 1. 브라우저에서 Digital Twins 인스턴스 **개요** 창으로 돌아옵니다.
 
@@ -212,19 +207,19 @@ Azure Digital Twin 리소스가 작성되었고 사용자 계정이 업데이트
 
 ### <a name="exercise-3---create-a-graph-of-the-models"></a>연습 3 - 모델의 그래프 만들기
 
-분석가는 모델링 작업의 일환으로 Cheese Cave Device 메시지 콘텐츠와 같은 여러 요소를 고려하고 DTDL **속성** 및 **원격 분석** 필드 정의에 매핑을 만듭니다. 이러한 DTDL 코드 조각을 사용하려면 **인터페이스**(모델의 최상위 코드 항목)에 통합해야 합니다. 그러나 Cheese Cave Device 모델의 **인터페이스** 는 Contoso Cheese Factory용 Azure Digital Twins 환경의 작은 일부분일 뿐입니다. 공장 전체를 나타내는 환경을 모델링하는 것은 본 과정의 범위를 벗어나기 때문에 여기서는 Cheese Cave Device 모델, 연결된 Cheese Cave 모델 및 Factory 모델을 중심으로 하는 크게 간소화된 환경을 살펴봅니다. 모델 계층 구조는 다음과 같습니다.
+분석가는 모델링 작업의 일환으로 Cheese Cave Device 메시지 콘텐츠와 같은 여러 요소를 고려하고 DTDL **속성** 및 **원격 분석** 필드 정의에 매핑을 만듭니다. 이러한 DTDL 코드 조각을 사용하려면 **인터페이스**(모델의 최상위 코드 항목)에 통합해야 합니다. 그러나 Cheese Cave Device 모델의 **인터페이스**는 Contoso Cheese Factory용 Azure Digital Twins 환경의 작은 일부분일 뿐입니다. 공장 전체를 나타내는 환경을 모델링하는 것은 본 과정의 범위를 벗어나기 때문에 여기서는 Cheese Cave Device 모델, 연결된 Cheese Cave 모델 및 Factory 모델을 중심으로 하는 크게 간소화된 환경을 살펴봅니다. 모델 계층 구조는 다음과 같습니다.
 
 * Cheese Factory 인터페이스
 * Cheese Cave 인터페이스
 * Cheese Cave Device 인터페이스
 
-위의 인터페이스 정의 계층 구조와 정의 간의 관계를 고려하면 **Cheese Factory에는 Cheese Cave가 포함** 되어 있고 **Cheese Cave에는 Cheese Cave Device가 포함** 되어 있다고 할 수 있습니다.
+위의 인터페이스 정의 계층 구조와 정의 간의 관계를 고려하면 **Cheese Factory에는 Cheese Cave가 포함**되어 있고 **Cheese Cave에는 Cheese Cave Device가 포함**되어 있다고 할 수 있습니다.
 
-ADT 환경용 디지털 트윈 모델을 디자인할 때는 일관된 방식을 사용하여 인터페이스, 스키마, 관계에 사용되는 ID를 작성하는 것이 가장 좋습니다. 환경 내의 각 엔터티에는 **@id** 속성(인터페이스의 필수 속성)이 포함됩니다. 이 속성은 해당 엔터티를 고유하게 식별해야 합니다. ID 값의 형식은 **DTMI(디지털 트윈 모델 식별자)** 의 형식과 동일합니다. DTMI의 세 가지 구성 요소는 scheme, path, version입니다. scheme과 path는 콜론 `:`으로 구분하고 path와 version은 세미콜론 `;`으로 구분합니다. 형식은 다음과 같습니다. `<scheme> : <path> ; <version>` DTMI 형식 ID 내의 scheme 값은 항상 **dtmi** 입니다.
+ADT 환경용 디지털 트윈 모델을 디자인할 때는 일관된 방식을 사용하여 인터페이스, 스키마, 관계에 사용되는 ID를 작성하는 것이 가장 좋습니다. 환경 내의 각 엔터티에는 **@id** 속성(인터페이스의 필수 속성)이 포함됩니다. 이 속성은 해당 엔터티를 고유하게 식별해야 합니다. ID 값의 형식은 **DTMI(디지털 트윈 모델 식별자)** 의 형식과 동일합니다. DTMI의 세 가지 구성 요소는 scheme, path, version입니다. scheme과 path는 콜론 `:`으로 구분하고 path와 version은 세미콜론 `;`으로 구분합니다. 형식은 다음과 같습니다. `<scheme> : <path> ; <version>` DTMI 형식 ID 내의 scheme 값은 항상 **dtmi**입니다.
 
 Contoso Cheese Factory에서 사용되는 ID 값의 예로 `dtmi:com:contoso:digital_factory:cheese_factory;1`을 들 수 있습니다.
 
-이 예에서 scheme 값은 필수 형식인 **dtmi** 이며, 버전은 **1** 로 설정되어 있습니다. 이 ID 값에서 `<path>` 구성 요소는 다음 분류법을 사용합니다.
+이 예에서 scheme 값은 필수 형식인 **dtmi**이며, 버전은 **1**로 설정되어 있습니다. 이 ID 값에서 `<path>` 구성 요소는 다음 분류법을 사용합니다.
 
 * 모델의 원본 - **com:contoso**
 * 모델 범주 - **digital_factory**
@@ -281,7 +276,7 @@ ADT 그래프의 다양한 시각화가 포함되어 있는 ADT Explorer는 개�
 
 #### <a name="task-1---access-the-adt-explorer"></a>작업 1 - ADT Explorer에 액세스
 
-**ADT Explorer** 는 Azure Digital Twins 서비스용 애플리케이션입니다. Azure Digital Twins 인스턴스에 연결되는 이 앱은 다음 기능을 제공합니다.
+**ADT Explorer**는 Azure Digital Twins 서비스용 애플리케이션입니다. Azure Digital Twins 인스턴스에 연결되는 이 앱은 다음 기능을 제공합니다.
 
 * 모델 업로드 및 탐색
 * 트윈 그래프 업로드 및 편집
@@ -295,7 +290,7 @@ ADT Explorer는 Azure Portal에 미리 보기 기능으로 통합되어 있으�
 
 1. 브라우저에서 Digital Twins 인스턴스 **개요** 창으로 이동합니다.
 
-1. 새 브라우저 탭에서 ADT Explorer를 열려면 **Azure Digital Twins Explorer(미리 보기) 열기** 를 클릭합니다.
+1. 새 브라우저 탭에서 ADT Explorer를 열려면 **Azure Digital Twins Explorer(미리 보기) 열기**를 클릭합니다.
 
     ADT Explorer를 호스트하는 새 브라우저 탭이 열립니다. 결과를 찾을 수 없다는 경고가 표시됩니다. 아직 가져온 모델이 없기 때문에 이 경고는 예상되는 것입니다.
 
@@ -317,7 +312,7 @@ ADT에서 디지털 트윈을 만들려면 먼저 모델을 업로드해야 합�
 
 처음 두 옵션은 프로그래밍 방식 시나리오에 적합하며, Azure CLI는 **CaC(Configuration as Code)** 시나리오 또는 한 번만 충족하면 되는 요구 사항 적용 시에 유용할 수 있습니다. **ADT Explorer** 앱을 사용하면 ADT와 직관적인 방식으로 상호 작용할 수 있습니다.
 
-> **팁**: **코드로 구성** 은 무엇일까요? 구성은 소스 코드(예: Azure CLI 명령을 포함하는 스크립트)로 작성되므로 개발 모범 사례(예: 모델 업로드의 재사용 가능한 정의 만들기, 매개 변수화, 루프를 사용하여 모델의 여러 인스턴스 만들기)를 활용하여 구성을 최적화할 수 있습니다. 이러한 스크립트는 소스 코드 컨트롤에 저장하여 보존하고 버전을 제어할 수 있습니다.
+> **팁**: **코드로 구성**은 무엇일까요? 구성은 소스 코드(예: Azure CLI 명령을 포함하는 스크립트)로 작성되므로 개발 모범 사례(예: 모델 업로드의 재사용 가능한 정의 만들기, 매개 변수화, 루프를 사용하여 모델의 여러 인스턴스 만들기)를 활용하여 구성을 최적화할 수 있습니다. 이러한 스크립트는 소스 코드 컨트롤에 저장하여 보존하고 버전을 제어할 수 있습니다.
 
 이 작업에서는 Azure CLI 명령과 ADT Explorer 샘플 앱을 사용하여 **Allfiles\Labs\19-Azure Digital Twins\Final\Models** 폴더에 포함된 모델을 업로드합니다.
 
@@ -329,7 +324,7 @@ ADT에서 디지털 트윈을 만들려면 먼저 모델을 업로드해야 합�
     az login
     ```
 
-1. **Cheese Factory 인터페이스** 를 업로드하려면 다음 명령을 입력합니다.
+1. **Cheese Factory 인터페이스**를 업로드하려면 다음 명령을 입력합니다.
 
     ```powershell
     az dt model create --models "{file-root}\Allfiles\Labs\19-Azure Digital Twins\Final\Models\CheeseFactoryInterface.json" -n adt-az220-training-{your-id}
@@ -355,19 +350,19 @@ ADT에서 디지털 트윈을 만들려면 먼저 모델을 업로드해야 합�
 
     **참고**: Azure CLI 명령을 구성할 수 없는 경우 아래 지침에서는 Azure Digital Twins Explorer 인터페이스를 사용하여 모델을 가져오는 방법을 보여 줍니다.
   
-1. **ADT Explorer** 로 돌아갑니다.
+1. **ADT Explorer**로 돌아갑니다.
 
     > **팁**: **MODELS** 탐색기에서 **새로 고침** 단추를 클릭하여 모델 목록을 업데이트합니다.
 
-    업로드한 **Cheese Factory - Interface Model** 이 표시됩니다.
+    업로드한 **Cheese Factory - Interface Model**이 표시됩니다.
 
     ![Factory Model이 표시된 ADT Explorer MODEL VIEW](media/LAB_AK_19-modelview-factory.png)
 
-1. **ADT Explorer** 를 사용하여 나머지 두 모델을 가져오려면 **MODELS** 탐색기에서 **모델 업로드** 아이콘을 클릭합니다.
+1. **ADT Explorer**를 사용하여 나머지 두 모델을 가져오려면 **MODELS** 탐색기에서 **모델 업로드** 아이콘을 클릭합니다.
 
     ![ADT Explorer MODEL VIEW의 Upload a Model 단추](media/LAB_AK_19-modelview-addmodel.png)
 
-1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **CheeseCaveInterface.json** 및 **CheeseCaveDeviceInterface.json** 파일을 선택하고 **Open** 을 클릭합니다.
+1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **CheeseCaveInterface.json** 및 **CheeseCaveDeviceInterface.json** 파일을 선택하고 **Open**을 클릭합니다.
 
     두 파일이 ADT에 업로드되고 모델이 추가됩니다. 완료되면 **MODELS** 탐색기가 업데이트되고 3개의 모델이 모두 표시됩니다.
 
@@ -384,7 +379,7 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 * [Azure CLI](https://docs.microsoft.com/cli/azure/ext/azure-iot/dt?view=azure-cli-latest)
 * [ADT Explorer](https://docs.microsoft.com/samples/azure-samples/digital-twins-explorer/digital-twins-explorer/)의 가져오기 기능
 
-앞에서 설명한 것처럼, 처음 두 옵션은 프로그래밍 방식 시나리오에 적합하며 Azure CLI는 **CaC(Configuration as Code)** 시나리오 또는 한 번만 충족하면 되는 요구 사항 적용 시에 유용할 수 있습니다. 디지털 트윈과 관계를 만드는 가장 직관적인 방식은 **ADT Explorer** 를 사용하는 것입니다. 그러나 ADT Explorer 사용 시에는 속성 초기화가 다소 제한됩니다.
+앞에서 설명한 것처럼, 처음 두 옵션은 프로그래밍 방식 시나리오에 적합하며 Azure CLI는 **CaC(Configuration as Code)** 시나리오 또는 한 번만 충족하면 되는 요구 사항 적용 시에 유용할 수 있습니다. 디지털 트윈과 관계를 만드는 가장 직관적인 방식은 **ADT Explorer**를 사용하는 것입니다. 그러나 ADT Explorer 사용 시에는 속성 초기화가 다소 제한됩니다.
 
 1. CheeseFactoryInterface 모델을 업로드하는 데 사용한 명령줄 창을 엽니다.
 
@@ -400,7 +395,7 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     * **--dt-name** 값은 ADT 트윈 인스턴스를 지정합니다.
     * **--dtmi** 값은 앞에서 업로드한 Cheese Factory 모델을 지정합니다.
-    * **--twin-id** 는 디지털 트윈에 지정되는 ID를 지정합니다.
+    * **--twin-id**는 디지털 트윈에 지정되는 ID를 지정합니다.
     * **--properties** 값은 트윈을 초기화하는 데 사용할 JSON 문서의 파일 경로를 제공합니다. 간단한 JSON을 인라인으로 지정할 수도 있습니다.
 
     명령 실행이 정상적으로 완료되면 다음과 같은 명령 출력이 표시됩니다.
@@ -442,11 +437,11 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     속성 이름은 Cheese Factory 인터페이스에서 선언한 DTDL 속성 값과 일치합니다.
 
-    > **참고**: 복합 속성 **GeoLocation** 은 **Latitude** 및 **Longitude** 속성이 포함된 JSON 개체를 통해 할당됩니다.
+    > **참고**: 복합 속성 **GeoLocation**은 **Latitude** 및 **Longitude** 속성이 포함된 JSON 개체를 통해 할당됩니다.
 
-1. 브라우저에서 **ADT Explorer** 로 돌아갑니다.
+1. 브라우저에서 **ADT Explorer**로 돌아갑니다.
 
-1. 지금까지 작성한 디지털 트윈을 표시하려면 **Run Query** 를 클릭합니다.
+1. 지금까지 작성한 디지털 트윈을 표시하려면 **Run Query**를 클릭합니다.
 
     > **참고**: 쿼리와 쿼리 언어에 대해서는 잠시 후에 설명합니다.
 
@@ -454,25 +449,25 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     ![ADT Explorer GRAPH VIEW Factory 1](media/LAB_AK_19-graphview-factory_1.png)
 
-1. 디지털 트윈 속성을 보려면 **TWIN GRAPH** 보기에서 **factory_1** 을 클릭합니다.
+1. 디지털 트윈 속성을 보려면 **TWIN GRAPH** 보기에서 **factory_1**을 클릭합니다.
 
-    **factory_1** 의 속성이 **Property View** 에 트리 보기의 노드로 표시됩니다.
+    **factory_1**의 속성이 **Property View**에 트리 보기의 노드로 표시됩니다.
 
-1. 경도 및 위도 속성 값을 확인하려면 **GeoLocation** 을 클릭합니다.
+1. 경도 및 위도 속성 값을 확인하려면 **GeoLocation**을 클릭합니다.
 
     이 두 값은 **FactoryProperties.json** 파일의 값과 일치합니다.
 
-1. Cheese Factory 모델에서 다른 디지털 트윈을 만들려면 **MODELS** 탐색기에서 **Cheese Factory** 모델을 찾은 다음 **트윈 만들기** 를 클릭합니다.
+1. Cheese Factory 모델에서 다른 디지털 트윈을 만들려면 **MODELS** 탐색기에서 **Cheese Factory** 모델을 찾은 다음 **트윈 만들기**를 클릭합니다.
 
     ![ADT Explorer MODEL VIEW Create a Twin 단추](media/LAB_AK_19-modelview-createtwin.png)
 
-1. **New Twin Name** 을 입력하라는 메시지가 표시되면 **factory_2** 를 입력하고 **Save** 를 클릭합니다.
+1. **New Twin Name**을 입력하라는 메시지가 표시되면 **factory_2**를 입력하고 **Save**를 클릭합니다.
 
-1. **factory_2** 의 디지털 트윈 속성을 보려면 **TWIN GRAPH** 보기에서 **factory_2** 를 클릭합니다.
+1. **factory_2**의 디지털 트윈 속성을 보려면 **TWIN GRAPH** 보기에서 **factory_2**를 클릭합니다.
 
     **FactoryName** 및 **GeoLocation** 속성은 초기화되어 있지 않습니다.
 
-1. **factoryName** 을 설정하려면 속성 오른쪽에 마우스 커서를 놓습니다. 그러면 텍스트 상자 컨트롤이 나타납니다. **Cheese Factory 2** 를 입력합니다.
+1. **factoryName**을 설정하려면 속성 오른쪽에 마우스 커서를 놓습니다. 그러면 텍스트 상자 컨트롤이 나타납니다. **Cheese Factory 2**를 입력합니다.
 
     ![ADT Explorer Property View factoryName 입력](media/LAB_AK_19-propertyexplorer-factoryname.png)
 
@@ -480,13 +475,13 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     > **참고**: Patch Twin 아이콘은 Run Query 단추 오른쪽에 있는 Save Query 아이콘과 같은 모양으로 표시됩니다. 하지만 Save Query 아이콘을 클릭하면 안 됩니다.
 
-    Patch Twin을 선택하면 JSON Patch가 작성 및 전송되어 디지털 트윈이 업데이트됩니다. 그러면 대화 상자에 **Patch Information** 이 표시됩니다. 값을 처음으로 설정하는 것이므로 **op**(작업) 속성이 **추가** 된 것을 볼 수 있습니다. 이후에 값을 변경하면 작업이 **대체** 됩니다. 직접 살펴보려면 다른 업데이트를 진행하기 전에 **쿼리 실행** 을 클릭하여 **TWIN GRAPH** 보기를 새로 고칩니다.
+    Patch Twin을 선택하면 JSON Patch가 작성 및 전송되어 디지털 트윈이 업데이트됩니다. 그러면 대화 상자에 **Patch Information**이 표시됩니다. 값을 처음으로 설정하는 것이므로 **op**(작업) 속성이 **추가**된 것을 볼 수 있습니다. 이후에 값을 변경하면 작업이 **대체**됩니다. 직접 살펴보려면 다른 업데이트를 진행하기 전에 **쿼리 실행**을 클릭하여 **TWIN GRAPH** 보기를 새로 고칩니다.
 
    > **팁**: JSON Patch 문서에 대해 자세히 알아보려면 다음 리소스를 검토하세요.
    > * [JSON(Javascript Object Notation) 패치](https://tools.ietf.org/html/rfc6902)
    > * [JSON 패치란?](http://jsonpatch.com/)
 
-1. **PROPERTIES** 탐색기에서 **factory_2** **GeoLocation** 속성을 살펴보면 **Latitude** 와 **Longitude** 의 값이 **Unset** 인 것을 알 수 있습니다.
+1. **PROPERTIES** 탐색기에서 **factory_2** **GeoLocation** 속성을 살펴보면 **Latitude**와 **Longitude**의 값이 **Unset**인 것을 알 수 있습니다.
 
     > **정보**: 이전 버전의 ADT Explorer는 UI를 통해 “하위 속성”을 편집하는 것을 지원하지 않았습니다. 최신 버전에서는 이 유용한 기능이 추가되었습니다.
 
@@ -501,7 +496,7 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     패치 정보가 다시 한번 표시되는 것을 볼 수 있습니다.
 
-1. **MODELS** 탐색기에서 적절한 모델을 선택하고 **트윈 추가** 를 클릭하여 다음 디지털 트윈을 추가합니다.
+1. **MODELS** 탐색기에서 적절한 모델을 선택하고 **트윈 추가**를 클릭하여 다음 디지털 트윈을 추가합니다.
 
     | 모델 이름                             | 디지털 트윈 이름 |
     | :------------------------------------- | :---------------- |
@@ -518,7 +513,7 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
 트윈은 해당 관계에 따라 트윈으로 연결됩니다. 트윈이 가질 수 있는 관계는 해당 모델의 일부로 정의됩니다.
 
-예를 들어 **Cheese Factory** 모델은 **Cheese Cave** 유형 트윈을 대상으로 하는 "contains" 관계를 정의합니다. 이 정의를 사용하는 경우 Azure Digital Twins에서는 모든 **Cheese Factory** 트윈과 모든 **Cheese Cave** 트윈(특정 치즈에 사용되는 특수 **Cheese Cave** 와 같이 **Cheese Cave** 의 하위 유형에 해당되는 트윈 포함) 간에 **rel_has_caves** 관계를 작성할 수 있습니다.
+예를 들어 **Cheese Factory** 모델은 **Cheese Cave** 유형 트윈을 대상으로 하는 "contains" 관계를 정의합니다. 이 정의를 사용하는 경우 Azure Digital Twins에서는 모든 **Cheese Factory** 트윈과 모든 **Cheese Cave** 트윈(특정 치즈에 사용되는 특수 **Cheese Cave**와 같이 **Cheese Cave**의 하위 유형에 해당되는 트윈 포함) 간에 **rel_has_caves** 관계를 작성할 수 있습니다.
 
 이 프로세스의 결과는 그래프의 가장자리(해당 관계)를 통해 연결된 노드(디지털 트윈) 집합입니다.
 
@@ -544,9 +539,9 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
     }
     ```
 
-1. 관계를 시각화하려면 브라우저에서 **ADT Explorer** 로 돌아갑니다.
+1. 관계를 시각화하려면 브라우저에서 **ADT Explorer**로 돌아갑니다.
 
-1. 업데이트된 디지털 트윈을 표시하려면 **Run Query** 를 클릭합니다.
+1. 업데이트된 디지털 트윈을 표시하려면 **Run Query**를 클릭합니다.
 
     다이어그램이 새로 고쳐지고 새 관계가 표시됩니다.
 
@@ -554,19 +549,19 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
     관계가 표시되지 않으면 브라우저 창을 새로 고친 후에 쿼리를 실행합니다.
 
-1. **ADT Explorer** 를 사용하여 관계를 추가하려면 먼저 **cave_1** 을 클릭하여 선택한 다음 **device_1** 을 **마우스 오른쪽 단추로 클릭** 합니다. 표시되는 바로 가기 메뉴에서 **관계 추가** 를 선택합니다.
+1. **ADT Explorer**를 사용하여 관계를 추가하려면 먼저 **cave_1**을 클릭하여 선택한 다음 **device_1**을 **마우스 오른쪽 단추로 클릭**합니다. 표시되는 바로 가기 메뉴에서 **관계 추가**를 선택합니다.
 
-1. **Create Relationship** 대화 상자의 **Source ID** 에 **cave_1** 이 표시되는지 확인합니다.
+1. **Create Relationship** 대화 상자의 **Source ID**에 **cave_1**이 표시되는지 확인합니다.
 
-1. **Target ID** 에는 **device_1** 이 표시되는지 확인합니다.
+1. **Target ID**에는 **device_1**이 표시되는지 확인합니다.
 
-1. **관계** 아래에서 **rel_has_devices** 를 선택합니다.
+1. **관계** 아래에서 **rel_has_devices**를 선택합니다.
 
     > **참고**: Azure CLI를 사용하여 만든 관계와 달리 **$relationshipId** 값을 제공하는 UI가 없습니다. 대신 GUID가 할당됩니다.
 
-1. 관계를 만들려면 **Save** 를 클릭합니다.
+1. 관계를 만들려면 **Save**를 클릭합니다.
 
-    관계가 작성되며 다이어그램이 업데이트되어 관계가 표시됩니다. 이제 다이어그램에 **factory_1** 에는 **cave_1** 이 포함되며 cave_1에는 **device_1** 이 포함됨을 나타내는 관계가 표시됩니다.
+    관계가 작성되며 다이어그램이 업데이트되어 관계가 표시됩니다. 이제 다이어그램에 **factory_1**에는 **cave_1**이 포함되며 cave_1에는 **device_1**이 포함됨을 나타내는 관계가 표시됩니다.
 
 1. 관계를 2개 더 추가합니다.
 
@@ -587,9 +582,9 @@ Azure Digital Twins 솔루션에서 환경의 엔터티는 디지털 트윈으�
 
 #### <a name="task-5---deleting-models-relationships-and-twins"></a>작업 5 - 모델, 관계 및 트윈 삭제
 
-ADT를 사용하는 모델링 과정의 디자인 프로세스에서는 개념 증명을 여러 개 만들 가능성이 높습니다. 이렇게 만든 개념 증명 중 대부분은 삭제됩니다. 디지털 트윈에 대해 수행하는 다른 작업과 마찬가지로 모델과 트윈 삭제 역시 프로그래밍 방식(API, SDK, CLI)으로 수행할 수도 있고 **ADT Explorer** 를 사용할 수도 있습니다.
+ADT를 사용하는 모델링 과정의 디자인 프로세스에서는 개념 증명을 여러 개 만들 가능성이 높습니다. 이렇게 만든 개념 증명 중 대부분은 삭제됩니다. 디지털 트윈에 대해 수행하는 다른 작업과 마찬가지로 모델과 트윈 삭제 역시 프로그래밍 방식(API, SDK, CLI)으로 수행할 수도 있고 **ADT Explorer**를 사용할 수도 있습니다.
 
-> **참고**: 삭제 작업은 비동기식으로 수행됩니다. 따라서 REST API 호출이나 **ADT Explorer** 에서 수행하는 삭제 작업이 즉시 완료되는 것처럼 보여도 ADT 서비스 내에서 해당 작업이 완료되려면 몇 분 정도 걸릴 수 있습니다. 그러므로 백 엔드 작업이 완료될 때까지는 최근 삭제한 모델과 이름이 같은 수정된 모델 업로드 시도가 예기치 않게 실패할 수 있습니다.
+> **참고**: 삭제 작업은 비동기식으로 수행됩니다. 따라서 REST API 호출이나 **ADT Explorer**에서 수행하는 삭제 작업이 즉시 완료되는 것처럼 보여도 ADT 서비스 내에서 해당 작업이 완료되려면 몇 분 정도 걸릴 수 있습니다. 그러므로 백 엔드 작업이 완료될 때까지는 최근 삭제한 모델과 이름이 같은 수정된 모델 업로드 시도가 예기치 않게 실패할 수 있습니다.
 
 1. CLI를 통해 **factory_2** 디지털 트윈을 삭제하려면 명령 프롬프트 창으로 돌아와 다음 명령을 입력합니다.
 
@@ -599,13 +594,13 @@ ADT를 사용하는 모델링 과정의 디자인 프로세스에서는 개념 �
 
     다른 명령과 달리 이 명령은 실행이 완료되어도 출력이 표시되지 않습니다(명령에서 오류가 생성되는 경우는 제외).
 
-1. **factory_1** 과 **cave_1** 간의 관계를 삭제하려면 다음 명령을 입력합니다.
+1. **factory_1**과 **cave_1** 간의 관계를 삭제하려면 다음 명령을 입력합니다.
 
     ```powershell
     az dt twin relationship delete -n adt-az220-training-{your-id} --twin-id factory_1 --relationship-id factory_1_has_cave_1
     ```
 
-    이 명령을 실행하려면 관계 ID가 필요합니다. 지정된 트윈의 관계 ID를 확인할 수 있습니다. 예를 들어 **factory_1** 의 관계 ID를 확인하려는 경우 다음 명령을 입력하면 됩니다.
+    이 명령을 실행하려면 관계 ID가 필요합니다. 지정된 트윈의 관계 ID를 확인할 수 있습니다. 예를 들어 **factory_1**의 관계 ID를 확인하려는 경우 다음 명령을 입력하면 됩니다.
 
     ```powershell
     az dt twin relationship list -n adt-az220-training-{your-id} --twin-id factory_1
@@ -642,35 +637,35 @@ ADT를 사용하는 모델링 과정의 디자인 프로세스에서는 개념 �
 
     > **중요**: 이 명령이 정상적으로 실행되어 Factory 모델이 삭제되더라도 **factory_1** 디지털 트윈은 계속 남아 있습니다. 그래프를 쿼리하면 삭제된 모델을 사용하여 만든 디지털 트윈도 계속 찾을 수 있습니다. 그러나 모델이 없는 트윈의 속성은 더 이상 업데이트할 수 없습니다. 그러므로 일치하지 않는 그래프가 생성되지 않도록 하려면 모델 관리 작업(버전 관리, 삭제 등)을 완료할 때 각별히 주의해야 합니다.
 
-1. 디지털 트윈의 최근 변경 내용을 표시하려면 **ADT Explorer** 로 돌아갑니다.
+1. 디지털 트윈의 최근 변경 내용을 표시하려면 **ADT Explorer**로 돌아갑니다.
 
-1. 표시를 업데이트하려면 브라우저 페이지를 새로 고친 후 **Run Query** 를 선택합니다.
+1. 표시를 업데이트하려면 브라우저 페이지를 새로 고친 후 **Run Query**를 선택합니다.
 
-    **Cheese Factory** 모델이 **MODEL** 탐색기에 표시되지 않으며, **TWIN GRAPH** 보기에 **factory_1** 과 **cave_1** 간의 관계도 없습니다.
+    **Cheese Factory** 모델이 **MODEL** 탐색기에 표시되지 않으며, **TWIN GRAPH** 보기에 **factory_1**과 **cave_1** 간의 관계도 없습니다.
 
-1. **cave_1** 과 **device_1** 간의 관계를 선택하려면 두 트윈 사이의 선을 클릭합니다.
+1. **cave_1**과 **device_1** 간의 관계를 선택하려면 두 트윈 사이의 선을 클릭합니다.
 
     선이 굵게 바뀌어 관계가 선택되었음이 표시되며, **Delete Relationship** 단추가 활성화됩니다.
 
     ![ADT Explorer GRAPH VIEW Delete Relationship](media/LAB_AK_19-graphview-deleterel.png)
 
-1. 관계를 삭제하려면 줄을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **관계 삭제** 를 선택한 다음 **삭제** 를 클릭하여 확인합니다.
+1. 관계를 삭제하려면 줄을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **관계 삭제**를 선택한 다음 **삭제**를 클릭하여 확인합니다.
 
     관계가 삭제되며 그래프가 업데이트됩니다.
 
-1. **device_1** 디지털 트윈을 삭제하려면 **device_1** 을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **트윈 삭제** 를 선택합니다.
+1. **device_1** 디지털 트윈을 삭제하려면 **device_1**을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **트윈 삭제**를 선택합니다.
 
-    > **참고**: **CTRL** 키와 마우스 왼쪽 단추 클릭을 사용하면 여러 개의 트윈을 선택할 수 있습니다. 선택한 여러 개의 트윈을 삭제하려면 마지막 트윈을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **트윈 삭제** 를 선택합니다.
+    > **참고**: **CTRL** 키와 마우스 왼쪽 단추 클릭을 사용하면 여러 개의 트윈을 선택할 수 있습니다. 선택한 여러 개의 트윈을 삭제하려면 마지막 트윈을 마우스 오른쪽 단추로 클릭하고 바로 가기 메뉴에서 **트윈 삭제**를 선택합니다.
 
-1. 그래프의 모든 디지털 트윈을 삭제하려면 ADT Explorer 페이지 오른쪽 위에서 **Delete All Twins** 를 클릭한 후 **Delete** 를 클릭하여 삭제를 확인합니다.
+1. 그래프의 모든 디지털 트윈을 삭제하려면 ADT Explorer 페이지 오른쪽 위에서 **Delete All Twins**를 클릭한 후 **Delete**를 클릭하여 삭제를 확인합니다.
 
     ![ADT Explorer Delete All Twins](media/LAB_AK_19-deletealltwins.png)
 
     > **중요**: 이 기능은 실행 취소할 수 없으므로 사용 시 주의하시기 바랍니다.
 
-1. **MODELS** 탐색기에서 **Cheese Cave Device** 모델을 삭제하려면 해당 **모델 삭제** 단추를 클릭한 다음 **삭제** 를 클릭하여 확인합니다.
+1. **MODELS** 탐색기에서 **Cheese Cave Device** 모델을 삭제하려면 해당 **모델 삭제** 단추를 클릭한 다음 **삭제**를 클릭하여 확인합니다.
 
-1. 모든 모델을 삭제하려면 **MODELS** 탐색기 상단에서 **모든 모델 삭제** 를 클릭합니다.
+1. 모든 모델을 삭제하려면 **MODELS** 탐색기 상단에서 **모든 모델 삭제**를 클릭합니다.
 
     > **중요**: 이 기능은 실행 취소할 수 없으므로 사용 시 주의하시기 바랍니다.
 
@@ -678,7 +673,7 @@ ADT를 사용하는 모델링 과정의 디자인 프로세스에서는 개념 �
 
 #### <a name="task-6---bulk-import-with-adt-explorer"></a>작업 6 - ADT Explorer를 사용하여 대량 가져오기
 
-**ADT Explorer** 에서는 디지털 트윈 그래프 가져오기와 내보내기가 지원됩니다. **Export** 기능은 모델, 트윈, 관계를 비롯한 최신 쿼리 결과를 JSON 기반 형식으로 직렬화합니다. **Import** 기능은 내보내기에서 생성된 JSON 기반 형식 또는 사용자 지정 Excel 기반 형식에서 역직렬화를 수행합니다. 가져오기를 실행하기 전에 유효성 검사를 위해 그래프 미리 보기가 제공됩니다.
+**ADT Explorer**에서는 디지털 트윈 그래프 가져오기와 내보내기가 지원됩니다. **Export** 기능은 모델, 트윈, 관계를 비롯한 최신 쿼리 결과를 JSON 기반 형식으로 직렬화합니다. **Import** 기능은 내보내기에서 생성된 JSON 기반 형식 또는 사용자 지정 Excel 기반 형식에서 역직렬화를 수행합니다. 가져오기를 실행하기 전에 유효성 검사를 위해 그래프 미리 보기가 제공됩니다.
 
 Excel 가져오기 형식에서는 다음 열이 사용됩니다.
 
@@ -704,29 +699,29 @@ Excel 가져오기 형식에서는 다음 열이 사용됩니다.
 
 **cheese-factory-scenario.xlsx** 스프레드시트는 **{file-root}\Allfiles\Labs\19-Azure Digital Twins\Final\Models** 폴더에 있습니다.
 
-1. 브라우저에서 **ADT Explorer** 로 돌아갑니다.
+1. 브라우저에서 **ADT Explorer**로 돌아갑니다.
 
-1. **ADT Explorer** 를 사용하여 모델을 가져오려면 **MODELS** 탐색기에서 **모델 업로드** 아이콘을 클릭합니다.
+1. **ADT Explorer**를 사용하여 모델을 가져오려면 **MODELS** 탐색기에서 **모델 업로드** 아이콘을 클릭합니다.
 
-1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **CheeseFactoryInterface.json**, **CheeseCaveInterface.json** 및 **CheeseCaveDeviceInterface.json** 파일을 선택하고 **Open** 을 클릭합니다.
+1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **CheeseFactoryInterface.json**, **CheeseCaveInterface.json** 및 **CheeseCaveDeviceInterface.json** 파일을 선택하고 **Open**을 클릭합니다.
 
     그러면 모든 모델이 다시 로드됩니다.
 
-1. **cheese-factory-scenario.xlsx** 스프레드시트를 가져오려면 **Import Graph** 를 클릭합니다.
+1. **cheese-factory-scenario.xlsx** 스프레드시트를 가져오려면 **Import Graph**를 클릭합니다.
 
     ![ADT Explorer GRAPH VIEW Import Graph](media/LAB_AK_19-graphview-importgraph.png)
 
-1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **cheese-factory-scenario.xlsx** 파일을 선택하고 **Open** 을 클릭합니다.
+1. **Open** 대화 상자에서 **Models** 폴더로 이동하여 **cheese-factory-scenario.xlsx** 파일을 선택하고 **Open**을 클릭합니다.
 
     **IMPORT** 보기에 가져올 그래프의 미리 보기가 표시됩니다.
 
     ![ADT Explorer GRAPH VIEW 가져오기 미리 보기](media/LAB_AK_19-graphview-importpreview.png)
 
-1. 가져오기를 완료하려면 **Start Import** 를 클릭합니다.
+1. 가져오기를 완료하려면 **Start Import**를 클릭합니다.
 
-    트윈 7개와 관계 6개를 가져왔다는 메시지가 포함된 **Import Successful** 대화 상자가 표시됩니다. **Close** 를 클릭하여 계속 진행합니다.
+    트윈 7개와 관계 6개를 가져왔다는 메시지가 포함된 **Import Successful** 대화 상자가 표시됩니다. **Close**를 클릭하여 계속 진행합니다.
 
-1. **TWIN GRAPH** 보기로 돌아가서 **쿼리 실행** 을 클릭합니다.
+1. **TWIN GRAPH** 보기로 돌아가서 **쿼리 실행**을 클릭합니다.
 
     가져온 그래프가 표시됩니다. 각 트윈을 클릭하여 속성을 확인할 수 있습니다(각 트윈은 값이 적용되어 초기화됨).
 
@@ -740,7 +735,7 @@ Excel 가져오기 형식에서는 다음 열이 사용됩니다.
 
 1. JSON을 확인하려면 Visual Studio Code에서 다운로드된 파일을 엽니다.
 
-    JSON이 한 줄로 표시되면 명령 팔레트를 통해 **Format Document** 명령을 사용하거나 **Shift+Alt+F** 를 눌러 JSON의 서식을 다시 지정합니다.
+    JSON이 한 줄로 표시되면 명령 팔레트를 통해 **Format Document** 명령을 사용하거나 **Shift+Alt+F**를 눌러 JSON의 서식을 다시 지정합니다.
 
     JSON에는 세 가지 주요 섹션이 있습니다.
 
@@ -750,7 +745,7 @@ Excel 가져오기 형식에서는 다음 열이 사용됩니다.
 
     > **참고**: Excel 형식과는 달리 JSON 파일에는 모델 정의가 포함되어 있습니다. 그러므로 파일 하나만 사용하면 모든 항목을 가져올 수 있습니다.
 
-1. JSON 파일을 가져오려면 **ADT Explorer** 를 사용하여 이전 작업의 지침에 따라 모델과 트윈을 삭제한 후에 방금 만든 JSON 내보내기 파일을 가져옵니다. 모델, 트윈과 해당 속성 및 관계는 다시 작성됩니다.
+1. JSON 파일을 가져오려면 **ADT Explorer**를 사용하여 이전 작업의 지침에 따라 모델과 트윈을 삭제한 후에 방금 만든 JSON 내보내기 파일을 가져옵니다. 모델, 트윈과 해당 속성 및 관계는 다시 작성됩니다.
 
 이 트윈 그래프는 쿼리 관련 연습에서 기준 그래프로 사용됩니다.
 
@@ -764,13 +759,13 @@ Excel 가져오기 형식에서는 다음 열이 사용됩니다.
 
 Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. 이 연습에서는 API 호출을 자동으로 처리하는 Azure Digital Twins Explorer 샘플 앱을 사용합니다. 추가 도구는 이 랩 뒷부분에서 살펴봅니다.
 
-> **참고**: 그래프 시각화용 도구인 **ADT Explorer** 에서는 이름 등 트윈에서 선택한 단일 값이 아닌 전체 트윈만 표시할 수 있습니다.
+> **참고**: 그래프 시각화용 도구인 **ADT Explorer**에서는 이름 등 트윈에서 선택한 단일 값이 아닌 전체 트윈만 표시할 수 있습니다.
 
 #### <a name="task-1---query-using-the-adt-explorer"></a>작업 1 - ADT Explorer를 사용하여 쿼리
 
 이 작업에서는 ADT Explorer를 사용해 그래프 쿼리를 실행하고 결과를 그래프로 렌더링합니다. 트윈은 속성, 모델 유형 및 관계를 기준으로 쿼리할 수 있습니다. 조합 연산자를 사용해 여러 쿼리를 결합하여 복합 쿼리로 만들 수 있습니다. 이러한 복합 쿼리를 사용하면 한 번에 여러 트윈 설명자 유형을 쿼리할 수 있습니다.
 
-1. 브라우저에서 **ADT Explorer** 로 돌아갑니다.
+1. 브라우저에서 **ADT Explorer**로 돌아갑니다.
 
 1. **QUERY EXPLORER** 쿼리가 다음과 같이 설정되어 있는지 확인합니다.
 
@@ -780,13 +775,13 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
     SQL 사용법을 알고 있다면 이 쿼리는 디지털 트윈의 모든 정보를 반환함을 알 수 있을 것입니다.
 
-1. 이 쿼리를 실행하려면 **Run Query** 를 클릭합니다.
+1. 이 쿼리를 실행하려면 **Run Query**를 클릭합니다.
 
     방금 언급했던 대로 전체 그래프가 표시됩니다.
 
 1. 이 그래프를 명명된 쿼리로 저장하려면 **Save** 아이콘(**Run Query** 단추 바로 오른쪽에 있음)을 클릭합니다.
 
-1. **Save Query** 대화 상자에서 이름으로 **All Twins** 를 입력하고 **Save** 를 클릭합니다.
+1. **Save Query** 대화 상자에서 이름으로 **All Twins**를 입력하고 **Save**를 클릭합니다.
 
     쿼리가 로컬에 저장되며, 쿼리 텍스트 상자 왼쪽의 **Saved Queries** 드롭다운에서 해당 쿼리를 사용할 수 있습니다. 저장한 쿼리를 삭제하려면 **Saved Queries** 드롭다운이 열려 있을 때 쿼리 이름 옆의 **X** 아이콘을 클릭합니다.
 
@@ -801,7 +796,7 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
     이제 그래프에 **Cheese Cave** 트윈 3개만 표시됩니다.
 
-    이 쿼리를 **Just Caves** 로 저장합니다.
+    이 쿼리를 **Just Caves**로 저장합니다.
 
 1. **inUse** 상태인 **Cheese Cave** 트윈만 표시하려면 다음 쿼리를 입력하여 실행합니다.
 
@@ -811,9 +806,9 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
     AND inUse = true
     ```
 
-    이제 그래프에 **cave_3** 및 **cave_1** 만 표시됩니다.
+    이제 그래프에 **cave_3** 및 **cave_1**만 표시됩니다.
 
-1. **inUse** 상태이며 **temperatureAlert** 가 있는 **Cheese Cave** 트윈만 표시하려면 다음 쿼리를 입력하여 실행합니다.
+1. **inUse** 상태이며 **temperatureAlert**가 있는 **Cheese Cave** 트윈만 표시하려면 다음 쿼리를 입력하여 실행합니다.
 
     ```sql
     SELECT * FROM digitaltwins
@@ -822,7 +817,7 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
     AND temperatureAlert = true
     ```
 
-    이제 그래프에 **cave_3** 만 표시됩니다.
+    이제 그래프에 **cave_3**만 표시됩니다.
 
 1. 관계를 사용하여 조인을 통해 **sensor-th-0055** 디바이스의 부모를 찾으려면 다음 쿼리를 입력합니다.
 
@@ -848,9 +843,9 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
 #### <a name="task-2---query-for-properties-using-the-adt-explorer"></a>작업 2 - ADT Explorer를 사용하여 속성 쿼리
 
-**ADT Explorer** 의 주요 제한 사항 중 하나는, 이 앱은 그래프 렌더링용으로 제작되었으므로 속성만 반환하는 쿼리의 결과는 표시할 수 없다는 점입니다. 이 작업에서는 코딩 솔루션을 사용하지 않고도 이러한 쿼리의 결과를 확인하는 방법을 알아봅니다.
+**ADT Explorer**의 주요 제한 사항 중 하나는, 이 앱은 그래프 렌더링용으로 제작되었으므로 속성만 반환하는 쿼리의 결과는 표시할 수 없다는 점입니다. 이 작업에서는 코딩 솔루션을 사용하지 않고도 이러한 쿼리의 결과를 확인하는 방법을 알아봅니다.
 
-1. 속성만 반환하는 유효한 쿼리를 실행하려면 다음 쿼리를 입력하고 **쿼리 실행** 을 클릭합니다.
+1. 속성만 반환하는 유효한 쿼리를 실행하려면 다음 쿼리를 입력하고 **쿼리 실행**을 클릭합니다.
 
     ```sql
     SELECT Parent.desiredTemperature FROM digitaltwins Parent
@@ -858,17 +853,17 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
     WHERE Child.$dtId = 'sensor-th-0055'
     ```
 
-    이 쿼리는 오류 없이 실행되기는 하지만 그래프는 표시되지 않습니다. 하지만 **ADT Explorer** 에서도 결과를 확인할 수 있는 방법이 있습니다. 다음 작업에서 **Output** 창을 열어 쿼리 결과를 확인하겠습니다.
+    이 쿼리는 오류 없이 실행되기는 하지만 그래프는 표시되지 않습니다. 하지만 **ADT Explorer**에서도 결과를 확인할 수 있는 방법이 있습니다. 다음 작업에서 **Output** 창을 열어 쿼리 결과를 확인하겠습니다.
 
 1. **Output** 창을 열려면 페이지 오른쪽 위의 **Settings** 아이콘을 클릭합니다.
 
-1. 그러면 표시되는 대화 상자의 **View** 아래에서 **Output** 을 사용하도록 설정하고 대화 상자를 닫습니다.
+1. 그러면 표시되는 대화 상자의 **View** 아래에서 **Output**을 사용하도록 설정하고 대화 상자를 닫습니다.
 
     페이지 아래쪽에 **Output** 창이 나타납니다.
 
-1. 위의 쿼리를 다시 실행하고 **Output** 창의 내용을 검토합니다.
+1. 위의 쿼리를 다시 실행하고 **Output**창의 내용을 검토합니다.
 
-    OUTPUT 창에 **Requested query** 가 표시된 다음 반환된 JSON이 표시됩니다. 이 JSON은 다음과 같습니다.
+    OUTPUT 창에 **Requested query**가 표시된 다음 반환된 JSON이 표시됩니다. 이 JSON은 다음과 같습니다.
 
     ```json
     {
@@ -901,9 +896,9 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
 이 작업에서는 구성 준비를 위해 Visual Studio Code에서 Cheese Cave Device 시뮬레이터 앱을 엽니다.
 
-1. **Visual Studio Code** 를 사용하여 ASP.NET 5 API 앱을 만드는 방법을 보여줍니다.
+1. **Visual Studio Code**를 사용하여 ASP.NET 5 API 앱을 만드는 방법을 보여줍니다.
 
-1. **파일** 메뉴에서 **폴더 열기** 를 클릭합니다.
+1. **파일** 메뉴에서 **폴더 열기**를 클릭합니다.
 
 1. 폴더 열기 대화 상자에서 랩 19 Starter 폴더로 이동합니다.
 
@@ -915,18 +910,18 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
                 * Starter
                     * CheeseCaveDevice
 
-1. **CheeseCaveDevice** 를 클릭하고 **폴더 선택** 을 클릭합니다.
+1. **CheeseCaveDevice**를 클릭하고 **폴더 선택**을 클릭합니다.
 
     Visual Studio Code의 EXPLORER 창에 다음 파일이 나열되어야 합니다.
 
     * CheeseCaveDevice.csproj
     * Program.cs
 
-1. 코드 파일을 열려면 **Program.cs** 를 클릭합니다.
+1. 코드 파일을 열려면 **Program.cs**를 클릭합니다.
 
     이 애플리케이션은 이전 랩의 작업에서 사용했던 시뮬레이션된 디바이스 애플리케이션과 매우 비슷함을 쉽게 확인할 수 있습니다. 이 버전은 대칭 키 인증을 사용하며 원격 분석 및 로깅 메시지를 IoT Hub로 전송합니다. 그리고 이전 랩의 애플리케이션보다 더 복잡한 센서가 구현되어 있습니다.
 
-1. **터미널** 메뉴에서 **새 터미널** 을 클릭합니다.
+1. **터미널** 메뉴에서 **새 터미널**을 클릭합니다.
 
     명령 프롬프트의 일부로 표시된 디렉터리 경로를 확인합니다. 이전 랩 프로젝트의 폴더 구조 내에서 이 프로젝트를 빌드하지 않으려고 합니다.
 
@@ -959,7 +954,7 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
 이 작업에서 빌드하는 시뮬레이션된 디바이스 앱은 온도와 습도를 모니터링하는 IoT 디바이스를 시뮬레이트합니다. 랩 15에서 빌드했던 것과 동일한 이 앱은 2초마다 센서 판독값을 시뮬레이션하고 센서 데이터와 통신합니다.
 
-1. **Visual Studio Code** 에서 Program.cs 파일이 열려 있는지 확인합니다.
+1. **Visual Studio Code**에서 Program.cs 파일이 열려 있는지 확인합니다.
 
 1. 코드 편집기에서 다음 코드 줄을 찾습니다.
 
@@ -973,7 +968,7 @@ Digital Twins REST API와 SDK를 통해 쿼리를 수행할 수 있습니다. �
 
     > **참고**: 랩 설정 연습에서는 디바이스 및 서비스 연결 문자열을 모두 저장했습니다. 여기서는 디바이스 연결 문자열을 입력해야 합니다.
 
-1. **파일** 메뉴에서 **저장** 을 클릭합니다.
+1. **파일** 메뉴에서 **저장**을 클릭합니다.
 
 #### <a name="task-3-test-your-code-to-send-telemetry"></a>작업 3: 원격 분석 전송 코드 테스트
 
@@ -1065,7 +1060,7 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
 
 이 작업에서는 연결된 Event Grid에서 이벤트가 발생할 때마다 실행되는 Azure 함수를 검토합니다. 이 함수가 실행되면 이벤트가 처리되며 메시지와 원격 분석이 ADT로 라우팅됩니다.
 
-1. **Visual Studio Code** 에서 **Contoso.AdtFunctions** 폴더를 엽니다.
+1. **Visual Studio Code**에서 **Contoso.AdtFunctions** 폴더를 엽니다.
 
 1. **Contoso.AdtFunctions.csproj** 파일을 엽니다.
 
@@ -1096,7 +1091,7 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
     private static readonly HttpClient httpClient = new HttpClient();
     ```
 
-    이 연습 앞부분에서 정의한 **ADT_SERVICE_URL** 환경 변수의 값이 **adtInstanceUrl** 변수에 할당되어 있습니다. 또한 이 코드는 **HttpClient** 의 단일 정적 인스턴스를 사용하는 모범 사례를 따릅니다.
+    이 연습 앞부분에서 정의한 **ADT_SERVICE_URL** 환경 변수의 값이 **adtInstanceUrl** 변수에 할당되어 있습니다. 또한 이 코드는 **HttpClient**의 단일 정적 인스턴스를 사용하는 모범 사례를 따릅니다.
 
 1. **Run** 메서드 선언을 찾아서 다음 주석을 검토합니다.
 
@@ -1105,7 +1100,7 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
     public async static Task Run([EventGridTrigger] EventGridEvent eventGridEvent, ILogger log)
     ```
 
-    위의 코드에서는 **FunctionName** 특성을 사용하여 **Run** 메서드를 **HubToAdtFunction** 의 진입점 **Run** 으로 표시했습니다. Azure Digital Twin을 업데이트하는 코드는 비동기적으로 실행되므로 이 메서드는 `async`로도 선언되어 있습니다.
+    위의 코드에서는 **FunctionName** 특성을 사용하여 **Run** 메서드를 **HubToAdtFunction**의 진입점 **Run**으로 표시했습니다. Azure Digital Twin을 업데이트하는 코드는 비동기적으로 실행되므로 이 메서드는 `async`로도 선언되어 있습니다.
 
     **eventGridEvent** 매개 변수에는 함수 호출을 트리거한 Event Grid 이벤트가 할당되어 있습니다. 그리고 **log** 매개 변수는 디버그에 사용 가능한 로거 액세스 권한을 제공합니다.
 
@@ -1205,12 +1200,12 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
     }
     ```
 
-    인덱서 방식을 사용하면 메시지 **properties** 및 **systemProperties** 에 쉽게 액세스할 수 있습니다. 그러나 **temperatureAlert**, **humidityAlert** 과 같이 속성이 선택 사항인 경우에는 예외가 throw되지 않도록 `SelectToken`을 사용해야 하며 null 병합 작업을 수행해야 합니다.
+    인덱서 방식을 사용하면 메시지 **properties** 및 **systemProperties**에 쉽게 액세스할 수 있습니다. 그러나 **temperatureAlert**, **humidityAlert**과 같이 속성이 선택 사항인 경우에는 예외가 throw되지 않도록 `SelectToken`을 사용해야 하며 null 병합 작업을 수행해야 합니다.
 
     > **팁**: null 병합 연산자 `??`에 대해 자세히 알아보려면 다음 콘텐츠를 검토하세요.
     > * [?? 및 ??= 연산자(C# 참조)](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/null-coalescing-operator)
 
-    ASCII로 인코딩된 JSON인 메시지 **body** 에는 원격 분석 페이로드가 포함됩니다. 그러므로 body를 먼저 디코드한 후 역직렬화해야 원격 분석 속성에 액세스할 수 있습니다.
+    ASCII로 인코딩된 JSON인 메시지 **body**에는 원격 분석 페이로드가 포함됩니다. 그러므로 body를 먼저 디코드한 후 역직렬화해야 원격 분석 속성에 액세스할 수 있습니다.
 
     > **팁**: 이벤트 스키마에 대해 자세히 알아보려면 다음 리소스를 검토하세요.
     > * [이벤트 스키마](https://docs.microsoft.com/azure/azure-functions/functions-bindings-event-grid-trigger?tabs=csharp%2Cbash#event-schema)
@@ -1251,7 +1246,7 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
 
 #### <a name="task-3---publish-functions"></a>작업 3 - 함수 게시
 
-1. Visual Studio Code용 Azure Functions 확장에서 **함수 앱에 배포** 를 선택합니다.
+1. Visual Studio Code용 Azure Functions 확장에서 **함수 앱에 배포**를 선택합니다.
 
     ![Visual Studio Code 함수 앱에 배포](media/LAB_AK_19-deploy-to-function-app.png)
 
@@ -1261,7 +1256,7 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
     * **구독 선택**: 메시지가 표시되면 이 과정에서 사용하고 있는 구독을 선택합니다.
     * **Azure에서 함수 앱 선택**: **func-az220-hub2adt-training-{사용자 ID}** 를 선택합니다.
 
-    배포를 확인하라는 메시지가 표시되면 **배포** 를 클릭합니다.
+    배포를 확인하라는 메시지가 표시되면 **배포**를 클릭합니다.
 
     함수가 컴파일되며, 컴파일이 정상적으로 완료되면 함수가 배포됩니다. 어느 정도 시간이 걸릴 수 있습니다.
 
@@ -1269,11 +1264,11 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
 
     ![Visual Studio Code 배포 완료 - 로그 스트리밍 선택](media/LAB_AK_19-function-stream-logs.png)
 
-    **로그 스트리밍** 를 선택하고 애플리케이션 로깅을 사용할지 확인하라는 대화 상자에서 **예** 를 클릭합니다.
+    **로그 스트리밍**를 선택하고 애플리케이션 로깅을 사용할지 확인하라는 대화 상자에서 **예**를 클릭합니다.
 
     그러면 **출력** 창에 배포된 함수의 로그 스트림이 표시됩니다. 이 스트림은 2시간 후에 만료됩니다. 상태 정보도 몇 가지 표시됩니다. 그러나 함수 앱을 시작할 때까지는 함수 자체에서 진단 정보가 제공되지는 않습니다. 진단 정보에 대해서는 다음 연습에서 살펴봅니다.
 
-    Visual Studio Code에서 Azure 함수를 마우스 오른쪽 단추로 클릭하고 **스트리밍 로그 시작** 또는 **스트리밍 로그 중지** 를 선택하면 언제든지 스트리밍을 중지하거나 시작할 수 있습니다.
+    Visual Studio Code에서 Azure 함수를 마우스 오른쪽 단추로 클릭하고 **스트리밍 로그 시작** 또는 **스트리밍 로그 중지**를 선택하면 언제든지 스트리밍을 중지하거나 시작할 수 있습니다.
 
     ![Visual Studio Code Azure 함수 로그 스트리밍 시작](media/LAB_AK_19-start-function-streaming.png)
 
@@ -1285,43 +1280,43 @@ Azure Digital Twins와 해당 API에 액세스하려면 적절한 권한이 있�
 
 1. **iot-az220-training-{사용자 ID}** IoT Hub로 이동합니다.
 
-1. 왼쪽 탐색 영역에서 **이벤트** 를 선택합니다.
+1. 왼쪽 탐색 영역에서 **이벤트**를 선택합니다.
 
-1. 이벤트 구독을 추가하려면 **+ 이벤트 구독** 을 클릭합니다.
+1. 이벤트 구독을 추가하려면 **+ 이벤트 구독**을 클릭합니다.
 
-1. **이벤트 구독 정보** 섹션의 **이름** 필드에 **device-telemetry** 를 입력합니다.
+1. **이벤트 구독 정보** 섹션의 **이름** 필드에 **device-telemetry**를 입력합니다.
 
-1. **Event Grid 스키마** 드롭다운에서 **Event Grid 스키마** 가 선택되어 있는지 확인합니다.
+1. **Event Grid 스키마** 드롭다운에서 **Event Grid 스키마**가 선택되어 있는지 확인합니다.
 
-1. **항목 정보** 섹션에서 **항목 유형** 이 **IoT Hub** 로, **원본 리소스** 가 **iot-az220-training-{사용자 ID}** 로 설정되어 있는지 확인합니다.
+1. **항목 정보** 섹션에서 **항목 유형**이 **IoT Hub**로, **원본 리소스**가 **iot-az220-training-{사용자 ID}** 로 설정되어 있는지 확인합니다.
 
-1. **시스템 항목 이름** 필드에 **Twin-Topic** 을 입력합니다.
+1. **시스템 항목 이름** 필드에 **Twin-Topic**을 입력합니다.
 
-1. **EVENT TYPES** 섹션의 **이벤트 유형 필터** 드롭다운에서 **디바이스 원격 분석** 만 선택합니다.
+1. **EVENT TYPES** 섹션의 **이벤트 유형 필터** 드롭다운에서 **디바이스 원격 분석**만 선택합니다.
 
-1. **엔드포인트 정보** 섹션의 **엔드포인트 유형** 드롭다운에서 **Azure 함수** 를 선택합니다.
+1. **엔드포인트 정보** 섹션의 **엔드포인트 유형** 드롭다운에서 **Azure 함수**를 선택합니다.
 
     UI가 업데이트되어 엔드포인트 선택 항목이 제공됩니다.
 
-1. **엔드포인트** 필드에서 **엔드포인트 선택** 을 클릭합니다.
+1. **엔드포인트** 필드에서 **엔드포인트 선택**을 클릭합니다.
 
 1. **Azure 함수 선택** 창의 **구독** 아래에서 올바른 구독이 선택되어 있는지 확인합니다.
 
-1. **리소스 그룹** 에서 **rg-az220** 이 선택되어 있는지 확인합니다.
+1. **리소스 그룹**에서 **rg-az220**이 선택되어 있는지 확인합니다.
 
 1. 함수 앱에서 **func-az220-hub2adt-training-{your-id}** 를 선택합니다.
 
-1. **슬롯** 아래에 **프로덕션** 이 선택되어 있는지 확인합니다.
+1. **슬롯** 아래에 **프로덕션**이 선택되어 있는지 확인합니다.
 
-1. **함수** 아래에 **HubToAdtFunction** 이 선택되어 있는지 확인합니다.
+1. **함수** 아래에 **HubToAdtFunction**이 선택되어 있는지 확인합니다.
 
-1. 해당 엔드포인트를 선택하려면 **선택 확인** 을 클릭합니다.
+1. 해당 엔드포인트를 선택하려면 **선택 확인**을 클릭합니다.
 
-1. 이제 지정된 엔드포인트가 **HubToAdtFunction** 인지 확인합니다.
+1. 이제 지정된 엔드포인트가 **HubToAdtFunction**인지 확인합니다.
 
-    **이벤트 구독 만들기** 창의 **엔드포인트 정보** 섹션 **엔드포인트** 필드에 **HubToAdtFunction** 이 표시되어야 합니다.
+    **이벤트 구독 만들기** 창의 **엔드포인트 정보** 섹션 **엔드포인트** 필드에 **HubToAdtFunction**이 표시되어야 합니다.
 
-1. 해당 이벤트 구독을 만들려면 **만들기** 를 클릭합니다.
+1. 해당 이벤트 구독을 만들려면 **만들기**를 클릭합니다.
 
     구독이 작성되고 나면 이전 연습에서 구성한 Azure Functions 로그 스트림에 메시지가 표시됩니다. Azure Functions 로그 스트림은 Event Grid에서 수신되는 원격 분석을 표시합니다. 또한 Azure Digital Twins에 연결하거나 트윈을 업데이트할 때 발생하는 모든 오류를 표시합니다.
 
@@ -1431,17 +1426,17 @@ Event Hubs 네임스페이스는 DNS 통합 네트워크 엔드포인트와 IP �
 
 1. Azure 계정 자격 증명을 사용하여 [portal.azure.com](https://portal.azure.com)에 로그인합니다.
 
-1. Azure Portal 메뉴에서 **+ 리소스 만들기** 를 클릭합니다.
+1. Azure Portal 메뉴에서 **+ 리소스 만들기**를 클릭합니다.
 
-1. 검색 텍스트 상자에 **Event Hubs** 를 입력하고 검색 결과에서 **Event Hubs** 를 클릭합니다.
+1. 검색 텍스트 상자에 **Event Hubs**를 입력하고 검색 결과에서 **Event Hubs**를 클릭합니다.
 
-1. **Event Hub** 를 만들려면 **만들기** 를 클릭합니다.
+1. **Event Hub**를 만들려면 **만들기**를 클릭합니다.
 
     **네임스페이스 만들기** 페이지가 열립니다.
 
 1. **네임스페이스 만들기** 블레이드의 **구독** 드롭다운에서 이 과정에 사용 중인 Azure 구독이 선택되어 있는지 확인합니다.
 
-1. **리소스 그룹** 오른쪽에서 드롭다운을 열고 **rg-az220** 을 클릭합니다.
+1. **리소스 그룹** 오른쪽에서 드롭다운을 열고 **rg-az220**을 클릭합니다.
 
 1. **네임스페이스 이름** 필드에 **adt-az220-training-{사용자 ID}** 를 입력합니다.
 
@@ -1449,9 +1444,9 @@ Event Hubs 네임스페이스는 DNS 통합 네트워크 엔드포인트와 IP �
 
 1. **위치** 오른쪽의 드롭다운 목록을 열고 리소스 그룹용으로 선택한 것과 같은 위치를 선택합니다.
 
-1. **가격 책정 계층** 오른쪽의 드롭다운 목록을 열고 **표준** 을 선택합니다.
+1. **가격 책정 계층** 오른쪽의 드롭다운 목록을 열고 **표준**을 선택합니다.
 
-    > **팁**: 이 연습에서는 **기본** 계층을 사용해도 됩니다. 그러나 대다수 프로덕션 시나리오에서는 **표준** 을 선택하는 것이 더 좋습니다.
+    > **팁**: 이 연습에서는 **기본** 계층을 사용해도 됩니다. 그러나 대다수 프로덕션 시나리오에서는 **표준**을 선택하는 것이 더 좋습니다.
     >
     > * **기본**
     >   * 소비자 그룹 1개
@@ -1466,22 +1461,22 @@ Event Hubs 네임스페이스는 DNS 통합 네트워크 엔드포인트와 IP �
     >   * 추가 저장 - 최대 7일
     >   * 게시자 정책
 
-1. **처리량 단위** 오른쪽의 선택 항목을 **1** 로 유지합니다.
+1. **처리량 단위** 오른쪽의 선택 항목을 **1**로 유지합니다.
 
     > **팁**: Event Hubs의 처리량 용량은 처리량 단위로 제어됩니다. 처리량 단위는 미리 구입한 용량의 단위입니다. 단일 처리량을 사용하면 다음을 수행할 수 있습니다.
     >
     > * 수신: 초당 최대 1MB 또는 초당 1,000회 이벤트(둘 중 빠른 쪽 적용).
     > * 송신: 초당 최대 2MB 또는 4096개의 이벤트.
 
-1. **자동 팽창 사용** 을 선택하지 않은 상태로 둡니다.
+1. **자동 팽창 사용**을 선택하지 않은 상태로 둡니다.
 
     자동 팽창은 트래픽이 할당된 처리량 단위의 용량을 초과할 때 표준 계층 이벤트 허브 네임스페이스에 할당된 처리량 단위 수를 자동으로 스케일링합니다. 네임스페이스가 자동으로 크기 조정되는 제한을 지정할 수 있습니다.
 
-1. 입력한 데이터의 유효성 검사를 시작하려면 **검토 + 만들기** 를 클릭합니다.
+1. 입력한 데이터의 유효성 검사를 시작하려면 **검토 + 만들기**를 클릭합니다.
 
-1. 유효성 검사가 정상적으로 완료되면 **만들기** 를 클릭합니다.
+1. 유효성 검사가 정상적으로 완료되면 **만들기**를 클릭합니다.
 
-    잠시 후 리소스가 배포됩니다. **리소스로 이동** 을 클릭합니다.
+    잠시 후 리소스가 배포됩니다. **리소스로 이동**을 클릭합니다.
 
 이 네임스페이스에는 디지털 트윈 원격 분석을 Azure 함수와 통합하는 데 사용되는 Event Hub, 그리고 Azure 함수의 출력을 가져와 Time Series Insights와 통합하는 Event Hub가 하나씩 포함됩니다.
 
@@ -1489,27 +1484,27 @@ Event Hubs 네임스페이스는 DNS 통합 네트워크 엔드포인트와 IP �
 
 이 작업에서는 트윈 원격 분석 이벤트를 구독하여 Azure 함수로 전달하는 Event Hub를 만듭니다.
 
-1. **adt-az220-training-{사용자 ID}** 네임스페이스의 **개요** 페이지에서 **+ Event Hub** 를 클릭합니다.
+1. **adt-az220-training-{사용자 ID}** 네임스페이스의 **개요** 페이지에서 **+ Event Hub**를 클릭합니다.
 
-1. **이벤트 허브 만들기** 페이지의 **이름** 아래에 **evh-az220-adt2func** 를 입력합니다.
+1. **이벤트 허브 만들기** 페이지의 **이름** 아래에 **evh-az220-adt2func**를 입력합니다.
 
     > **참고**: 이벤트 허브는 전역적으로 고유한 네임스페이스 내에서 범위가 지정되므로 이벤트 허브 이름 자체는 전역적으로 고유할 필요가 없습니다.
 
-1. **파티션 수** 값은 **1** 로 유지합니다.
+1. **파티션 수** 값은 **1**로 유지합니다.
 
     > **팁**: 파티션은 데이터 조직 메커니즘으로서 애플리케이션 소비에 필요한 다운스트림 병렬 처리와 관련되어 있습니다. Event Hub의 파티션 수는 예상되는 동시 판독기의 수와 직접적으로 관련이 있습니다.
 
-1. **메시지 보존** 값은 **1** 로 유지합니다.
+1. **메시지 보존** 값은 **1**로 유지합니다.
 
     > **팁**: 이벤트의 보존 기간입니다. 보존 기간을 1일에서 7일 사이로 설정할 수 있습니다.
 
-1. **캡처** 에서 값을 **끄기** 로 설정된 상태로 유지합니다.
+1. **캡처**에서 값을 **끄기**로 설정된 상태로 유지합니다.
 
     > **팁**: Azure Event Hubs Capture를 사용하면 시간 또는 크기 간격을 지정할 수 있는 유연성이 추가되어 Event Hub의 스트리밍 데이터를 선택한 Azure Blob 스토리지 또는 선택한 Azure Data Lake Store 계정으로 자동 전달할 수 있습니다. 캡처는 빠르게 설정할 수 있으며 실행을 위한 관리 비용이 없고 Event Hubs 처리량 단위에 따라 크기가 자동으로 조정됩니다. Event Hubs 캡처는 스트리밍 데이터를 Azure에 로드하는 가장 쉬운 방법이며 데이터 캡처보다 데이터 처리에 집중할 수 있게 해줍니다.
 
-1. Event Hub를 만들려면 **만들기** 를 클릭합니다.
+1. Event Hub를 만들려면 **만들기**를 클릭합니다.
 
-    잠시 후에 Event Hub가 작성되고 Event Hubs 네임스페이스 **개요** 가 표시됩니다. 필요한 경우 페이지 아래쪽으로 스크롤합니다. 그러면 **evh-az220-adt2func** Event Hub가 표시됩니다.
+    잠시 후에 Event Hub가 작성되고 Event Hubs 네임스페이스 **개요**가 표시됩니다. 필요한 경우 페이지 아래쪽으로 스크롤합니다. 그러면 **evh-az220-adt2func** Event Hub가 표시됩니다.
 
 #### <a name="task-3---add-an-authorization-rule-to-the-event-hub"></a>작업 3 - Event Hub에 권한 부여 규칙 추가
 
@@ -1525,25 +1520,25 @@ Event Hubs 네임스페이스는 DNS 통합 네트워크 엔드포인트와 IP �
 
 1. **adt-az220-training-{사용자 ID}** 네임스페이스의 **개요** 페이지에서 **evh-az220-adt2func** Event Hub를 클릭합니다.
 
-1. 왼쪽 탐색 영역의 **설정** 에서 **공유 액세스 정책** 을 클릭합니다.
+1. 왼쪽 탐색 영역의 **설정**에서 **공유 액세스 정책**을 클릭합니다.
 
     이 Event Hub와 관련된 빈 정책 목록이 표시됩니다.
 
-1. 새 권한 부여 규칙을 만들려면 **+ 추가** 를 클릭합니다.
+1. 새 권한 부여 규칙을 만들려면 **+ 추가**를 클릭합니다.
 
-1. **SAS 정책 추가** 창의 정책 이름에 **ADTHubPolicy** 를 입력합니다.
+1. **SAS 정책 추가** 창의 정책 이름에 **ADTHubPolicy**를 입력합니다.
 
-1. 권한 목록에서 **보내기** 와 **수신 대기** 만 선택합니다.
+1. 권한 목록에서 **보내기**와 **수신 대기**만 선택합니다.
 
-1. **만들기** 를 클릭하여 권한 부여 규칙을 만듭니다.
+1. **만들기**를 클릭하여 권한 부여 규칙을 만듭니다.
 
     잠시 후에 창이 닫히고 정책 목록이 새로 고쳐집니다.
 
-1. 권한 부여 규칙의 기본 연결 문자열을 검색하려면 목록에서 **ADTHubPolicy** 를 클릭합니다.
+1. 권한 부여 규칙의 기본 연결 문자열을 검색하려면 목록에서 **ADTHubPolicy**를 클릭합니다.
 
     **SAS 정책: ADTHubPolicy** 창이 열립니다.
 
-1. **연결 문자열 기본 키** 값을 복사하여 새 텍스트 파일 **telemetry-function.txt** 에 추가합니다.
+1. **연결 문자열 기본 키** 값을 복사하여 새 텍스트 파일 **telemetry-function.txt**에 추가합니다.
 
 1. **SAS 정책: ADTHubPolicy** 창을 닫습니다.
 
@@ -1553,15 +1548,15 @@ Event Hub를 만들었으므로 엔드포인트로 추가해야 합니다. 그�
 
 1. **iot-az229-training-{사용자 ID}** 인스턴스로 이동합니다.
 
-1. 왼쪽 탐색 영역의 **출력 연결** 에서 **엔드포인트** 를 클릭합니다.
+1. 왼쪽 탐색 영역의 **출력 연결**에서 **엔드포인트**를 클릭합니다.
 
     엔드포인트 목록이 표시됩니다.
 
-1. 새 엔드포인트를 추가하려면 **+ 엔드포인트 만들기** 를 클릭합니다.
+1. 새 엔드포인트를 추가하려면 **+ 엔드포인트 만들기**를 클릭합니다.
 
-1. **엔드포인트 만들기** 창의 **이름** 에 **eventhub-endpoint** 를 입력합니다.
+1. **엔드포인트 만들기** 창의 **이름**에 **eventhub-endpoint**를 입력합니다.
 
-1. **엔드포인트 유형** 에서 **Event Hub** 를 선택합니다.
+1. **엔드포인트 유형**에서 **Event Hub**를 선택합니다.
 
     Event Hub 정보를 지정하는 필드가 포함되어 UI가 업데이트됩니다.
 
@@ -1569,13 +1564,13 @@ Event Hub를 만들었으므로 엔드포인트로 추가해야 합니다. 그�
 
 1. **Event Hub 네임스페이스** 드롭다운에서 **adt-az220-training-{사용자 ID}** 를 선택합니다.
 
-1. **Event Hub** 드롭다운에서 **evh-az220-adt2func** 를 선택합니다.
+1. **Event Hub** 드롭다운에서 **evh-az220-adt2func**를 선택합니다.
 
-1. **권한 부여 규칙** 드롭다운에서 **ADTHubPolicy** 를 선택합니다.
+1. **권한 부여 규칙** 드롭다운에서 **ADTHubPolicy**를 선택합니다.
 
    이 규칙은 앞에서 만든 권한 부여 규칙입니다.
 
-1. 엔드포인트를 만들려면 **저장** 을 클릭합니다.
+1. 엔드포인트를 만들려면 **저장**을 클릭합니다.
 
     창이 닫히고 잠시 후에 새 엔드포인트가 포함되어 엔드포인트 목록이 업데이트됩니다.
 
@@ -1583,25 +1578,25 @@ Event Hub를 만들었으므로 엔드포인트로 추가해야 합니다. 그�
 
 ADT 인스턴스에 Event Hub 엔드포인트를 추가했으므로 이제 트윈 원격 분석 이벤트를 해당 엔드포인트로 전송하는 경로를 만들어야 합니다.
 
-1. 왼쪽 탐색 영역의 **출력 연결** 에서 **이벤트 경로** 를 클릭합니다.
+1. 왼쪽 탐색 영역의 **출력 연결**에서 **이벤트 경로**를 클릭합니다.
 
     기존 경로 목록이 표시됩니다.
 
-1. 새 이벤트 경로를 추가하려면 **+ 이벤트 경로 만들기** 를 클릭합니다.
+1. 새 이벤트 경로를 추가하려면 **+ 이벤트 경로 만들기**를 클릭합니다.
 
-1. **이벤트 경로 만들기** 창의 **이름** 에 **eventhub-telemetryeventroute** 를 입력합니다.
+1. **이벤트 경로 만들기** 창의 **이름**에 **eventhub-telemetryeventroute**를 입력합니다.
 
-1. **엔드포인트** 드롭다운에서 **eventhub-endpoint** 를 선택합니다.
+1. **엔드포인트** 드롭다운에서 **eventhub-endpoint**를 선택합니다.
 
-1. **이벤트 경로 필터 추가** 아래에서 **고급 편집기** 를 사용하지 않도록 설정합니다.
+1. **이벤트 경로 필터 추가** 아래에서 **고급 편집기**를 사용하지 않도록 설정합니다.
 
     고급 편집기는 특정 필터링 식 입력을 지원하는데, 이 작업에서는 UI만으로도 충분합니다.
 
-1. **이벤트 유형** 드롭다운에서 **원격 분석** 만 선택합니다.
+1. **이벤트 유형** 드롭다운에서 **원격 분석**만 선택합니다.
 
     **필터** 필드에 생성된 필터 식이 표시되는 것을 볼 수 있습니다.
 
-1. 이벤트 경로를 만들려면 **저장** 을 클릭합니다.
+1. 이벤트 경로를 만들려면 **저장**을 클릭합니다.
 
     창이 닫히고 잠시 후에 새 경로가 포함되어 이벤트 경로 목록이 업데이트됩니다.
 
@@ -1647,7 +1642,7 @@ ADT 인스턴스에 Event Hub 엔드포인트를 추가했으므로 이제 트�
     Endpoint=sb://evhns-az220-training-dm030821.servicebus.windows.net/;SharedAccessKeyName=TSIHubPolicy;SharedAccessKey=x4xItgUG6clhGR9pZe/U6JqrNV+drIfu1rlvYHEdk9I=;EntityPath=evh-az220-func2tsi
     ```
 
-1. **연결 문자열 기본 키** 값을 복사하여 텍스트 파일 **telemetry-function.txt** 에 추가합니다.
+1. **연결 문자열 기본 키** 값을 복사하여 텍스트 파일 **telemetry-function.txt**에 추가합니다.
 
     다음 작업에서 연결 문자열 2개가 필요합니다.
 
@@ -1657,37 +1652,37 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
 
 1. Event Hub 권한 부여 규칙 연결 문자열을 환경 변수로 제공하려면 Azure Portal에서 **func-az220-hub2adt-training-{사용자 ID}** 인스턴스로 이동합니다.
 
-1. 왼쪽 탐색 영역의 **설정** 에서 **구성** 을 클릭합니다.
+1. 왼쪽 탐색 영역의 **설정**에서 **구성**을 클릭합니다.
 
-1. **구성** 페이지의 **애플리케이션 설정** 탭에서 나와 있는 현재 **애플리케이션 설정** 을 검토합니다.
+1. **구성** 페이지의 **애플리케이션 설정** 탭에서 나와 있는 현재 **애플리케이션 설정**을 검토합니다.
 
-    앞에서 CLI를 통해 추가한 **ADT_SERVICE_URL** 이 목록에 포함되어 있어야 합니다.
+    앞에서 CLI를 통해 추가한 **ADT_SERVICE_URL**이 목록에 포함되어 있어야 합니다.
 
-1. adt2func 규칙 연결 문자열용 환경 변수를 추가하려면 **+ 새 애플리케이션 설정** 을 클릭합니다.
+1. adt2func 규칙 연결 문자열용 환경 변수를 추가하려면 **+ 새 애플리케이션 설정**을 클릭합니다.
 
-1. **애플리케이션 설정 추가/편집** 창의 **이름** 필드에 **ADT_HUB_CONNECTIONSTRING** 을 입력합니다.
+1. **애플리케이션 설정 추가/편집** 창의 **이름** 필드에 **ADT_HUB_CONNECTIONSTRING**을 입력합니다.
 
 1. **값** 필드에 이전 작업에서 **telemetry-function.txt** 파일에 저장해 두었고 `EntityPath=evh-az220-adt2func`로 끝나는 권한 부여 규칙 연결 문자열 값을 입력합니다.
 
     값은 다음과 비슷합니다. `Endpoint=sb://evhns-az220-training-dm030821.servicebus.windows.net/;SharedAccessKeyName=ADTHubPolicy;SharedAccessKey=fHnhXtgjRGpC+rR0LFfntlsMg3Z/vjI2z9yBb9MRDGc=;EntityPath=evh-az220-adt2func`
 
-1. 창을 닫으려면 **확인** 을 클릭합니다.
+1. 창을 닫으려면 **확인**을 클릭합니다.
 
     > **참고**: 이 설정은 아직 저장되지 않았습니다.
 
-1. func2tsi 규칙 연결 문자열용 환경 변수를 추가하려면 **+ 새 애플리케이션 설정** 을 클릭합니다.
+1. func2tsi 규칙 연결 문자열용 환경 변수를 추가하려면 **+ 새 애플리케이션 설정**을 클릭합니다.
 
-1. **애플리케이션 설정 추가/편집** 창의 **이름** 필드에 **TSI_HUB_CONNECTIONSTRING** 을 입력합니다.
+1. **애플리케이션 설정 추가/편집** 창의 **이름** 필드에 **TSI_HUB_CONNECTIONSTRING**을 입력합니다.
 
 1. **값** 필드에 이전 작업에서 **telemetry-function.txt** 파일에 저장해 두었고 `EntityPath=evh-az220-func2tsi`로 끝나는 권한 부여 규칙 연결 문자열 값을 입력합니다.
 
     값은 다음과 비슷합니다. `Endpoint=sb://evhns-az220-training-dm030821.servicebus.windows.net/;SharedAccessKeyName=TSIHubPolicy;SharedAccessKey=x4xItgUG6clhGR9pZe/U6JqrNV+drIfu1rlvYHEdk9I=;EntityPath=evh-az220-func2tsi`
 
-1. 창을 닫으려면 **확인** 을 클릭합니다.
+1. 창을 닫으려면 **확인**을 클릭합니다.
 
     > **참고**: 이 설정은 아직 저장되지 않았습니다.
 
-1. 새 설정 2개를 모두 저장하려면 **저장**, **계속** 을 차례로 클릭합니다.
+1. 새 설정 2개를 모두 저장하려면 **저장**, **계속**을 차례로 클릭합니다.
 
     > **참고**: 애플리케이션 설정을 변경하면 함수가 다시 시작됩니다.
 
@@ -1737,13 +1732,13 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
     }
     ```
 
-    **Run** 메서드 정의를 잠시 살펴보겠습니다. **events** 매개 변수는 **EventHubTrigger **특성을 사용합니다. 이 특성의 생성자는 Event Hub의 이름, 소비자 그룹의** 선택적** 이름(생략하는 경우 **$Default** 가 사용됨), 그리고 연결 문자열을 포함하는 앱 설정의 이름을 받습니다. 그러면 Event Hub 이벤트 스트림으로 전송된 이벤트에 응답하는 함수 트리거가 구성됩니다. **events** 는 EventData 배열로 정의되므로 이벤트 배치를 입력할 수 있습니다.
+    **Run** 메서드 정의를 잠시 살펴보겠습니다. **events** 매개 변수는 **EventHubTrigger **특성을 사용합니다. 이 특성의 생성자는 Event Hub의 이름, 소비자 그룹의** 선택적** 이름(생략하는 경우 **$Default**가 사용됨), 그리고 연결 문자열을 포함하는 앱 설정의 이름을 받습니다. 그러면 Event Hub 이벤트 스트림으로 전송된 이벤트에 응답하는 함수 트리거가 구성됩니다. **events**는 EventData 배열로 정의되므로 이벤트 배치를 입력할 수 있습니다.
 
-    > **팁** **EventHubTrigger** 에 대해 자세히 알아보려면 다음 리소스를 검토하세요. [Azure Functions의 Azure Event Hubs 트리거](https://docs.microsoft.com/azure/azure-functions/functions-bindings-event-hubs-trigger?tabs=csharp)
+    > **팁** **EventHubTrigger**에 대해 자세히 알아보려면 다음 리소스를 검토하세요. [Azure Functions의 Azure Event Hubs 트리거](https://docs.microsoft.com/azure/azure-functions/functions-bindings-event-hubs-trigger?tabs=csharp)
 
-    다음 매개 변수인 **outputEvents** 에는 **EventHub** 특성이 있습니다. 이 특성의 생성자는 Event Hub의 이름, 그리고 연결 문자열이 포함되어 있는 앱 설정의 이름을 가져옵니다. **outputEvents** 변수에 추가하는 데이터는 연결된 Event Hub에 게시됩니다.
+    다음 매개 변수인 **outputEvents**에는 **EventHub** 특성이 있습니다. 이 특성의 생성자는 Event Hub의 이름, 그리고 연결 문자열이 포함되어 있는 앱 설정의 이름을 가져옵니다. **outputEvents** 변수에 추가하는 데이터는 연결된 Event Hub에 게시됩니다.
 
-    이 함수는 이벤트 배치를 처리하므로, 예외를 포함할 컬렉션을 만들어서 오류를 처리할 수 있습니다. 그러면 함수가 배치의 각 이벤트에 대해 반복 실행되어 예외를 catch한 후 컬렉션에 추가합니다. 메서드의 끝부분으로 넘어가면 예외가 여러 개인 경우 컬렉션과 함께 **AggregaeException** 이 작성되고 생성된 예외가 한 개인 경우 단일 예외가 throw되는 것을 볼 수 있습니다.
+    이 함수는 이벤트 배치를 처리하므로, 예외를 포함할 컬렉션을 만들어서 오류를 처리할 수 있습니다. 그러면 함수가 배치의 각 이벤트에 대해 반복 실행되어 예외를 catch한 후 컬렉션에 추가합니다. 메서드의 끝부분으로 넘어가면 예외가 여러 개인 경우 컬렉션과 함께 **AggregaeException**이 작성되고 생성된 예외가 한 개인 경우 단일 예외가 throw되는 것을 볼 수 있습니다.
 
 1. 이벤트가 Cheese Cave Device 원격 분석을 포함하는지 확인하는 코드를 검토하려면 `// REVIEW check telemetry below here` 주석을 찾아서 그 아래의 다음 코드를 검토합니다.
 
@@ -1783,22 +1778,22 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
     await outputEvents.AddAsync(tsiUpdateMessage);
     ```
 
-    **eventData.Body** 는 단순한 배열이 아닌 **ArraySegment** 로 정의되므로 **messageBody** 가 포함된 기본 배열 부분을 추출한 후에 역직렬화해야 합니다.
+    **eventData.Body**는 단순한 배열이 아닌 **ArraySegment**로 정의되므로 **messageBody**가 포함된 기본 배열 부분을 추출한 후에 역직렬화해야 합니다.
 
-    > **팁**: **ArraySegment** 에 대해 자세히 알아보려면 다음 리소스를 검토하세요.
+    > **팁**: **ArraySegment**에 대해 자세히 알아보려면 다음 리소스를 검토하세요.
     > * [ArraySegment&lt;T&gt; 구조체](https://docs.microsoft.com/dotnet/api/system.arraysegment-1?view=net-5.0)
 
-    그리고 나면 키/값 쌍을 저장할 **Dictionary** 가 인스턴스화됩니다. TSI 이벤트 내에서 전송되는 속성은 이 키/값 쌍으로 구성됩니다. (`adt-az220-training-dm030821.api.eus.digitaltwins.azure.net/digitaltwins/sensor-th-0055`와 같은 정규화된 트윈 ID를 포함하는) **cloudEvents:source** 속성이 **\$dtId** 키에 할당된 것을 볼 수 있습니다. 이 키가 특별한 이유는, 설정 과정에서 생성된 Time Series Insights 환경이 **\$dtId** 를 **시계열 ID 속성** 으로 사용하기 때문입니다.
+    그리고 나면 키/값 쌍을 저장할 **Dictionary**가 인스턴스화됩니다. TSI 이벤트 내에서 전송되는 속성은 이 키/값 쌍으로 구성됩니다. (`adt-az220-training-dm030821.api.eus.digitaltwins.azure.net/digitaltwins/sensor-th-0055`와 같은 정규화된 트윈 ID를 포함하는) **cloudEvents:source** 속성이 **\$dtId** 키에 할당된 것을 볼 수 있습니다. 이 키가 특별한 이유는, 설정 과정에서 생성된 Time Series Insights 환경이 **\$dtId**를 **시계열 ID 속성**으로 사용하기 때문입니다.
 
     **temperature** 및 **humidity** 값은 메시지에서 추출되어 TSI 업데이트에 추가됩니다.
 
-    그런 후에 업데이트가 JSON으로 직렬화된 후 **outputEvents** 에 추가되며, 그러면 Event Hub에 업데이트가 게시됩니다.
+    그런 후에 업데이트가 JSON으로 직렬화된 후 **outputEvents**에 추가되며, 그러면 Event Hub에 업데이트가 게시됩니다.
 
     이제 함수를 게시할 수 있습니다.
 
 #### <a name="task-9---publish-the-function-app-to-azure"></a>작업 9 - Azure에 함수 앱 게시
 
-1. Visual Studio Code용 Azure Functions 확장에서 **함수 앱에 배포** 를 선택합니다.
+1. Visual Studio Code용 Azure Functions 확장에서 **함수 앱에 배포**를 선택합니다.
 
     ![Visual Studio Code 함수 앱에 배포](media/LAB_AK_19-deploy-to-function-app.png)
 
@@ -1807,7 +1802,7 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
     * **구독 선택**: 메시지가 표시되면 이 과정에서 사용하고 있는 구독을 선택합니다.
     * **Azure에서 함수 앱 선택**: **func-az220-hub2adt-training-{사용자 ID}** 를 선택합니다.
 
-    배포를 확인하라는 메시지가 표시되면 **배포** 를 클릭합니다.
+    배포를 확인하라는 메시지가 표시되면 **배포**를 클릭합니다.
 
     함수가 컴파일되며, 컴파일이 정상적으로 완료되면 함수가 배포됩니다. 어느 정도 시간이 걸릴 수 있습니다.
 
@@ -1815,11 +1810,11 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
 
     ![Visual Studio Code 배포 완료 - 로그 스트리밍 선택](media/LAB_AK_19-function-stream-logs.png)
 
-    **로그 스트리밍** 를 선택하고 애플리케이션 로깅을 사용할지 확인하라는 대화 상자에서 **예** 를 클릭합니다.
+    **로그 스트리밍**를 선택하고 애플리케이션 로깅을 사용할지 확인하라는 대화 상자에서 **예**를 클릭합니다.
 
     그러면 **출력** 창에 배포된 함수의 로그 스트림이 표시됩니다. 이 스트림은 2시간 후에 만료됩니다. 상태 정보도 몇 가지 표시됩니다. 그러나 함수 앱을 시작할 때까지는 함수 자체에서 진단 정보가 제공되지는 않습니다. 진단 정보에 대해서는 다음 연습에서 살펴봅니다.
 
-    Visual Studio Code에서 Azure 함수를 마우스 오른쪽 단추로 클릭하고 **스트리밍 로그 시작** 또는 **스트리밍 로그 중지** 를 선택하면 언제든지 스트리밍을 중지하거나 시작할 수 있습니다.
+    Visual Studio Code에서 Azure 함수를 마우스 오른쪽 단추로 클릭하고 **스트리밍 로그 시작** 또는 **스트리밍 로그 중지**를 선택하면 언제든지 스트리밍을 중지하거나 시작할 수 있습니다.
 
     ![Visual Studio Code Azure 함수 로그 스트리밍 시작](media/LAB_AK_19-start-function-streaming.png)
 
@@ -1829,47 +1824,47 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
 
     > **참고**: 이 리소스는 설정 스크립트에 의해 작성된 것입니다. 설정 스크립트를 실행하지 않았다면 지금 실행하세요. 기존 리소스에는 아무런 영향이 없습니다.
 
-1. **개요** 창의 **필수** 섹션에서 **시계열 ID 속성** 필드와 값 **$dtid** 를 찾습니다. TSI 환경을 만들 때 지정된 이 값은 TSI로 스트리밍하는 이벤트 데이터의 필드 값과 일치해야 합니다.
+1. **개요** 창의 **필수** 섹션에서 **시계열 ID 속성** 필드와 값 **$dtid**를 찾습니다. TSI 환경을 만들 때 지정된 이 값은 TSI로 스트리밍하는 이벤트 데이터의 필드 값과 일치해야 합니다.
 
     > **중요**: **시계열 ID 속성** 값은 TSI 환경을 만들 때 지정되며, 그 이후에는 변경할 수 없습니다.
 
-1. 왼쪽 탐색 영역의 **설정** 에서 **이벤트 원본** 을 클릭합니다.
+1. 왼쪽 탐색 영역의 **설정**에서 **이벤트 원본**을 클릭합니다.
 
     **이벤트 원본** 목록이 표시됩니다. 현재 해당 목록은 비어 있습니다.
 
-1. 새 이벤트 원본을 추가하려면 **+ 추가** 를 클릭합니다.
+1. 새 이벤트 원본을 추가하려면 **+ 추가**를 클릭합니다.
 
-1. **새 이벤트 원본** 창의 **이벤트 원본 이름** 에 **adt-telemetry** 를 입력합니다.
+1. **새 이벤트 원본** 창의 **이벤트 원본 이름**에 **adt-telemetry**를 입력합니다.
 
-1. **원본** 에서 **이벤트 허브** 를 선택합니다.
+1. **원본**에서 **이벤트 허브**를 선택합니다.
 
-1. **가져오기 옵션** 에서 **사용 가능한 구독의 이벤트 허브 사용** 을 선택합니다.
+1. **가져오기 옵션**에서 **사용 가능한 구독의 이벤트 허브 사용**을 선택합니다.
 
-1. **구독 ID** 에서 이 과정에 사용 중인 구독을 선택합니다.
+1. **구독 ID**에서 이 과정에 사용 중인 구독을 선택합니다.
 
-1. **Event Hub 네임스페이스** 에서 **evhns-az220-training-{사용자 ID}** 를 선택합니다.
+1. **Event Hub 네임스페이스**에서 **evhns-az220-training-{사용자 ID}** 를 선택합니다.
 
-1. **Event Hub 이름** 에서 **evh-az220-func2tsi** 를 선택합니다.
+1. **Event Hub 이름**에서 **evh-az220-func2tsi**를 선택합니다.
 
-1. **Event Hub 정책 값** 에서 **TSIHubPolicy** 를 선택합니다.
+1. **Event Hub 정책 값**에서 **TSIHubPolicy**를 선택합니다.
 
-    읽기 전용 필드인 **이벤트 허브 정책 키** 에 값이 자동으로 입력됩니다.
+    읽기 전용 필드인 **이벤트 허브 정책 키**에 값이 자동으로 입력됩니다.
 
-1. **Event Hub 소비자 그룹** 에서 **$Default** 를 선택합니다.
+1. **Event Hub 소비자 그룹**에서 **$Default**를 선택합니다.
 
     > **팁**: 여기서는 **evh-az220-func2tsi** Event Hub의 이벤트 읽기 권한자가 한 명뿐이므로 **$Default** 소비자 그룹을 선택하면 됩니다. 읽기 권한자를 더 추가하려면 읽기 권한자당 소비자 그룹을 하나씩 사용하는 것이 좋습니다. 소비자 그룹은 Event Hub에 작성됩니다.
 
-1. **시작 시간** 에서 **내 모든 데이터** 를 선택합니다.
+1. **시작 시간**에서 **내 모든 데이터**를 선택합니다.
 
     그 밖에도 프로덕션 환경에 적합한 **지금 시작(기본값)** 과 같은 여러 옵션이 있는 것을 볼 수 있습니다.
 
-1. **이벤트 Serialization 형식** 에서 읽기 전용 값이 **JSON** 인지 확인합니다.
+1. **이벤트 Serialization 형식**에서 읽기 전용 값이 **JSON**인지 확인합니다.
 
 1. **타임스탬프 속성 이름** 값은 비워 둡니다.
 
     > **팁**: 이 속성은 이벤트 타임스탬프로 사용해야 하는 이벤트 속성의 이름을 지정합니다. 이 속성을 지정하지 않으면 이벤트 원본 내의 이벤트 인큐 시간이 이벤트 타임스탬프로 사용됩니다.
 
-1. 이벤트 원본을 만들려면 **저장** 을 클릭합니다.
+1. 이벤트 원본을 만들려면 **저장**을 클릭합니다.
 
 #### <a name="task-11---visualize-the-telemetry-data-in-time-series-insights"></a>작업 11 - Time Series Insights에서 원격 분석 데이터 시각화
 
@@ -1877,15 +1872,15 @@ Azure 함수가 Event Hub에 연결하려면 적절한 권한이 있는 정책�
 
 1. 브라우저에서 **tsi-az220-training-{사용자 ID}** 리소스의 **개요** 창으로 돌아옵니다.
 
-1. **TSI 탐색기** 로 이동하려면 **TSI 탐색기로 이동** 을 클릭합니다.
+1. **TSI 탐색기**로 이동하려면 **TSI 탐색기로 이동**을 클릭합니다.
 
-    브라우저의 새 탭에서 **TSI 탐색기** 가 열립니다.
+    브라우저의 새 탭에서 **TSI 탐색기**가 열립니다.
 
 1. 탐색기의 왼쪽에는 Azure Digital Twins가 표시됩니다.
 
     ![TSI 탐색기 데이터](media/LAB_AK_19-tsi-explorer.png)
 
-1. 그래프에 원격 분석을 추가하려면 트윈을 클릭하고 **EventCount**, **humidity** 및 **temperature** 를 선택합니다.
+1. 그래프에 원격 분석을 추가하려면 트윈을 클릭하고 **EventCount**, **humidity** 및 **temperature**를 선택합니다.
 
     적절한 시간 범위를 선택하면 다음과 같이 데이터가 표시됩니다.
 

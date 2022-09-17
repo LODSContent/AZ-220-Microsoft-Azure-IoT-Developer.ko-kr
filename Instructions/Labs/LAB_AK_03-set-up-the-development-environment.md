@@ -2,13 +2,8 @@
 lab:
   title: '랩 03: 개발 환경 설정'
   module: 'Module 2: Devices and Device Communication'
-ms.openlocfilehash: ff8debfc695c847537f93449f9849775b2945b9c
-ms.sourcegitcommit: 7281efeb9cb5654361c2f1aa93aea724a3898966
-ms.translationtype: HT
-ms.contentlocale: ko-KR
-ms.lasthandoff: 05/31/2022
-ms.locfileid: "145955881"
 ---
+
 # <a name="set-up-the-development-environment"></a>개발 환경 설정
 
 ## <a name="lab-scenario"></a>랩 시나리오
@@ -67,7 +62,7 @@ Visual Studio Code 및 Azure CLI 도구(가상 머신에 이미 설치되어 있
 
 1. Visual Studio Code를 엽니다.
 
-1. Visual Studio Code 창의 왼쪽에서 **확장** 을 클릭합니다.
+1. Visual Studio Code 창의 왼쪽에서 **확장**을 클릭합니다.
 
     단추 위에 마우스 포인터를 가져가 단추 제목을 표시할 수 있습니다. 확장 단추는 위에서 여섯 번째입니다.
 
@@ -110,9 +105,9 @@ Visual Studio Code 및 Azure CLI 도구(가상 머신에 이미 설치되어 있
 
 1. Cloud Shell에 대한 스토리지 설정 관련 메시지가 표시되면 기본값을 수락합니다.
 
-1. Cloud Shell에서 **Bash** 를 사용하고 있는지 확인합니다.
+1. Cloud Shell에서 **Bash**를 사용하고 있는지 확인합니다.
 
-    Azure Cloud Shell 페이지의 왼쪽 상단에 있는 드롭다운은 환경을 선택하는 데 사용됩니다. 선택한 드롭다운 값이 **Bash** 인지 확인합니다.
+    Azure Cloud Shell 페이지의 왼쪽 상단에 있는 드롭다운은 환경을 선택하는 데 사용됩니다. 선택한 드롭다운 값이 **Bash**인지 확인합니다.
 
 1. 명령 프롬프트에서 IoT용 Azure CLI 확장을 설치하려면 다음 명령을 입력합니다.
 
@@ -183,11 +178,11 @@ Visual Studio Code 및 Azure CLI 도구(가상 머신에 이미 설치되어 있
     https://dotnet.microsoft.com/download
     ```
 
-1. .NET 다운로드 페이지의 .NET Core 아래에서 **.NET Core SDK 다운로드** 를 클릭합니다.
+1. .NET 다운로드 페이지의 .NET Core 아래에서 **.NET Core SDK 다운로드**를 클릭합니다.
 
     .NET Core SDK는 .NET Core 앱을 빌드하는 데 사용됩니다. 이 과정의 랩에서는 코드 파일 빌드/편집을 사용합니다.
 
-1. 팝업 메뉴에서 **실행** 을 클릭한 다음 화면의 지침에 따라 설치를 완료합니다.
+1. 팝업 메뉴에서 **실행**을 클릭한 다음 화면의 지침에 따라 설치를 완료합니다.
 
     설치를 완료하는 데에는 1분 미만이 소요됩니다. 다음 구성 요소가 설치됩니다.
 
@@ -216,11 +211,11 @@ Visual Studio 코드는 데스크톱에서 실행되며 Windows, macOS 및 Linux
 
     Mac OS X 및 Linux에 Visual Studio Code를 설치하는 방법은 Visual Studio Code 설정 가이드([여기](https://code.visualstudio.com/docs/setup/setup-overview))에서 찾을 수 있습니다. 이 페이지에는 Windows 설치에 대한 자세한 지침과 팁도 포함되어 있습니다.
 
-1. Visual Studio Code 다운로드 페이지에서 **Windows** 를 클릭합니다.
+1. Visual Studio Code 다운로드 페이지에서 **Windows**를 클릭합니다.
 
     다운로드를 시작하면 팝업 대화 상자가 열리고 시작 안내가 표시됩니다.
 
-1. 팝업 대화 상자에서 설치 프로세스를 시작하려면 **실행** 을 클릭한 다음 화면의 지침을 따릅니다.
+1. 팝업 대화 상자에서 설치 프로세스를 시작하려면 **실행**을 클릭한 다음 화면의 지침을 따릅니다.
 
     설치 관리자를 다운로드 폴더에 저장하도록 선택한 경우 폴더를 연 다음 VSCodeSetup 실행 파일을 두 번 클릭하여 설치를 완료할 수 있습니다.
 
@@ -260,13 +255,13 @@ IoT Edge 및 Docker를 지원하기 위해 Python 3.9을 사용합니다.
 
 1. 메시지가 표시되면 설치 관리자를 실행하는 옵션을 선택합니다.
 
-1. Install Python 대화 상자에서 **Add Python 3.9 to PATH** 를 클릭합니다.
+1. Install Python 대화 상자에서 **Add Python 3.9 to PATH**를 클릭합니다.
 
-1. **지금 설치** 를 클릭합니다.
+1. **지금 설치**를 클릭합니다.
 
-1. "설정이 완료되었습니다" 페이지가 나타나면 **경로 길이 제한 사용 안 함** 을 클릭합니다.
+1. "설정이 완료되었습니다" 페이지가 나타나면 **경로 길이 제한 사용 안 함**을 클릭합니다.
 
-1. 설치 프로세스를 완료하려면 **닫기** 를 클릭합니다.
+1. 설치 프로세스를 완료하려면 **닫기**를 클릭합니다.
 
 #### <a name="task-5-install-docker-desktop-on-your-local-pc"></a>작업 5: 로컬 PC에 Docker Desktop 설치
 
@@ -284,11 +279,11 @@ IoT Edge 및 Docker를 지원하기 위해 Python 3.9을 사용합니다.
 
     Windows 설정을 사용하여 Windows 기능 대화 상자를 연 다음 해당 대화 상자를 통해 Hyper-V 및 컨테이너가 활성화되어 있는지 확인할 수 있습니다.
 
-1. **Windows용 Docker Desktop** 을 클릭한 다음, 화면 지침에 따라 다운로드된 설치 파일을 열고 실행합니다.
+1. **Windows용 Docker Desktop**을 클릭한 다음, 화면 지침에 따라 다운로드된 설치 파일을 열고 실행합니다.
 
     Docker Desktop에 대한 설치 대화 상자가 나타나려면 다소 시간이 걸릴 수 있습니다.
 
-1. 설치 성공 메시지가 나타나면 **닫기** 를 클릭합니다.
+1. 설치 성공 메시지가 나타나면 **닫기**를 클릭합니다.
 
     Docker Desktop은 설치 후 자동으로 시작되지 않습니다. Docker Desktop을 시작하려면 Docker를 검색하고 검색 결과에서 Docker Desktop을 선택합니다. 상태 표시줄의 고래 아이콘이 계속 그대로 있다면 Docker Desktop이 작동 중이며 모든 터미널 창에서 액세스할 수 있습니다.
 
@@ -308,18 +303,18 @@ node.js를 사용하여 로컬에서 실행되는 샘플 웹 애플리케이션�
 
 1. 설치 관리자를 단계별로 실행합니다.
 
-   * **End-User License Agreement** - 조건에 동의하고 **Next** 를 클릭합니다.
-   * **Destination Folder** - 기본값을 적용(하거나 필요한 경우 폴더를 변경)하고 **Next** 를 클릭합니다.
-   * **Custom Setup** - 기본값을 적용하고 **Next** 를 클릭합니다.
-   * **Tools for Native Modules** - **Automatically install** 을 선택하고 **Next** 를 클릭합니다.
-   * **Ready to install Node.js** - **Install** 을 클릭합니다.
-     * UAC 대화 상자에서 **Yes** 를 클릭합니다.
+   * **End-User License Agreement** - 조건에 동의하고 **Next**를 클릭합니다.
+   * **Destination Folder** - 기본값을 적용(하거나 필요한 경우 폴더를 변경)하고 **Next**를 클릭합니다.
+   * **Custom Setup** - 기본값을 적용하고 **Next**를 클릭합니다.
+   * **Tools for Native Modules** - **Automatically install**을 선택하고 **Next**를 클릭합니다.
+   * **Ready to install Node.js** - **Install**을 클릭합니다.
+     * UAC 대화 상자에서 **Yes**를 클릭합니다.
 
-1. 설치가 완료될 때까지 기다렸다가 **Finish** 를 클릭합니다.
+1. 설치가 완료될 때까지 기다렸다가 **Finish**를 클릭합니다.
 
 1. **Install Additional Tools for Node.js** 명령 창에서 메시지가 표시되면 **Enter** 키를 눌러 계속 진행합니다.
 
-1. UAC 대화 상자에서 **Yes** 를 클릭합니다.
+1. UAC 대화 상자에서 **Yes**를 클릭합니다.
 
     여러 패키지가 다운로드되어 설치됩니다. 이 작업에는 약간의 시간이 걸립니다.
 
@@ -339,7 +334,7 @@ Visual Studio Code 및 Azure CLI 도구는 개발자가 솔루션을 보다 효�
 
 1. Visual Studio Code를 엽니다.
 
-1. Visual Studio Code 창의 왼쪽에서 **확장** 을 클릭합니다.
+1. Visual Studio Code 창의 왼쪽에서 **확장**을 클릭합니다.
 
     단추 위에 마우스 포인터를 가져가 단추 제목을 표시할 수 있습니다. 확장 단추는 위에서 여섯 번째입니다.
 
@@ -382,9 +377,9 @@ Visual Studio Code 및 Azure CLI 도구는 개발자가 솔루션을 보다 효�
 
 1. Cloud Shell에 대한 스토리지 설정 관련 메시지가 표시되면 기본값을 수락합니다.
 
-1. Cloud Shell에서 **Bash** 를 사용하고 있는지 확인합니다.
+1. Cloud Shell에서 **Bash**를 사용하고 있는지 확인합니다.
 
-    Azure Cloud Shell 페이지의 왼쪽 상단에 있는 드롭다운은 환경을 선택하는 데 사용됩니다. 선택한 드롭다운 값이 **Bash** 인지 확인합니다.
+    Azure Cloud Shell 페이지의 왼쪽 상단에 있는 드롭다운은 환경을 선택하는 데 사용됩니다. 선택한 드롭다운 값이 **Bash**인지 확인합니다.
 
 1. 명령 프롬프트에서 IoT용 Azure CLI 확장을 설치하려면 다음 명령을 입력합니다.
 
@@ -453,19 +448,19 @@ Microsoft는 랩 리소스 파일에 대한 액세스를 제공하기 위해 Git
 
 1. 웹 브라우저에서 다음 위치로 이동합니다. [https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer](https://github.com/MicrosoftLearning/AZ-220-Microsoft-Azure-IoT-Developer)
 
-1. **코드** 드롭다운을 열고 **ZIP 다운로드** 를 클릭합니다.
+1. **코드** 드롭다운을 열고 **ZIP 다운로드**를 클릭합니다.
 
-1. ZIP 파일을 개발 환경에 저장하려면 **저장** 을 클릭합니다.
+1. ZIP 파일을 개발 환경에 저장하려면 **저장**을 클릭합니다.
 
-1. 파일이 저장되면 **폴더 열기** 를 클릭합니다.
+1. 파일이 저장되면 **폴더 열기**를 클릭합니다.
 
-1. 저장된 ZIP 파일을 마우스 오른쪽 단추로 클릭한 다음 **압축 풀기** 를 클릭합니다.
+1. 저장된 ZIP 파일을 마우스 오른쪽 단추로 클릭한 다음 **압축 풀기**를 클릭합니다.
 
-1. **찾아보기** 를 클릭한 다음 액세스하기 편리한 폴더 위치로 이동합니다.
+1. **찾아보기**를 클릭한 다음 액세스하기 편리한 폴더 위치로 이동합니다.
 
-    > **중요**: 기본적으로 Windows의 [최대 파일 경로 길이는 260](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file#maximum-path-length-limitation)입니다. ZIP 파일 내의 파일 경로 자체가 긴 상태이므로, 파일 경로가 긴 중첩 폴더 내에 보관 파일의 압축을 풀지 마세요. 예를 들어 zip의 압축을 풀 때는 **c:\users\\[사용자 이름]\downloads\AZ-220-Microsoft-Azure-IoT-Developer-master** 와 같은 기본 경로가 표시될 수 있습니다. 이 기본 경로를 **c:\az220** 과 같이 최대한 줄이는 것이 좋습니다.
+    > **중요**: 기본적으로 Windows의 [최대 파일 경로 길이는 260](https://docs.microsoft.com/en-us/windows/win32/fileio/naming-a-file#maximum-path-length-limitation)입니다. ZIP 파일 내의 파일 경로 자체가 긴 상태이므로, 파일 경로가 긴 중첩 폴더 내에 보관 파일의 압축을 풀지 마세요. 예를 들어 zip의 압축을 풀 때는 **c:\users\\[사용자 이름]\downloads\AZ-220-Microsoft-Azure-IoT-Developer-master**와 같은 기본 경로가 표시될 수 있습니다. 이 기본 경로를 **c:\az220**과 같이 최대한 줄이는 것이 좋습니다.
 
-1. 파일 압축을 풀려면 **압축 풀기** 를 클릭합니다.
+1. 파일 압축을 풀려면 **압축 풀기**를 클릭합니다.
 
     파일의 위치를 기록해 둡니다.
 
@@ -479,7 +474,7 @@ Azure PowerShell은 PowerShell 명령줄에서 직접 Azure 리소스를 관리�
 
 1. Azure PowerShell 모듈을 현재 사용자를 위해서만 설치할지(권장 방법) 또는 모든 사용자를 위해 설치할지를 결정합니다.
 
-1. 선택한 PowerShell 터미널을 시작합니다. 모든 사용자를 위해 설치하는 경우 **관리자로 실행** 을 선택하거나 macOS 또는 Linux에서 **sudo** 명령을 사용하여 관리자 권한 PowerShell 세션을 시작해야 합니다.
+1. 선택한 PowerShell 터미널을 시작합니다. 모든 사용자를 위해 설치하는 경우 **관리자로 실행**을 선택하거나 macOS 또는 Linux에서 **sudo** 명령을 사용하여 관리자 권한 PowerShell 세션을 시작해야 합니다.
 
 1. 현재 사용자에 대해서만 설치하려면 다음 명령을 입력합니다.
 
@@ -505,7 +500,7 @@ Azure PowerShell은 PowerShell 명령줄에서 직접 Azure 리소스를 관리�
     [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"):
     ```
 
-1. 설치를 계속하려면 **예** 또는 **모두 예** 로 답변합니다.
+1. 설치를 계속하려면 **예** 또는 **모두 예**로 답변합니다.
 
     Az 모듈은 Azure PowerShell cmdlet의 롤업 모듈입니다. 설치하면 사용 가능한 모든 Azure Resource Manager 모듈이 다운로드되고 cmdlet을 사용할 수 있게 됩니다.
 
@@ -578,9 +573,9 @@ Azure CLI에서는 리소스 공급자 관리용으로 다양한 명령을 제�
     az provider register --namespace "Microsoft.TimeSeriesInsights" --accept-terms
     ```
 
-    > **참고**: **-accept-terms** 가 미리 보기 상태라는 경고가 표시될 수 있습니다. 해당 경고는 무시하면 됩니다.
+    > **참고**: **-accept-terms**가 미리 보기 상태라는 경고가 표시될 수 있습니다. 해당 경고는 무시하면 됩니다.
 
-    > **참고**: 위의 명령에는 **microsoft.insights** 가 소문자로 나와 있지만 등록/등록 취소 명령은 대/소문자를 구분하지 않습니다.
+    > **참고**: 위의 명령에는 **microsoft.insights**가 소문자로 나와 있지만 등록/등록 취소 명령은 대/소문자를 구분하지 않습니다.
 
 1. 리소스의 업데이트된 상태를 확인하려면 다음 명령을 실행합니다.
 
@@ -588,7 +583,7 @@ Azure CLI에서는 리소스 공급자 관리용으로 다양한 명령을 제�
     az provider list -o table --query "[?(contains(namespace, 'insight') || contains(namespace, 'Event') || contains(namespace, 'TimeSeriesInsights'))]"
     ```
 
-    > **참고**: 등록/등록 취소 명령은 대/소문자를 구분하지 않지만 쿼리 언어는 대/소문자를 구분하므로 **insight** 는 소문자로 표기해야 합니다.
+    > **참고**: 등록/등록 취소 명령은 대/소문자를 구분하지 않지만 쿼리 언어는 대/소문자를 구분하므로 **insight**는 소문자로 표기해야 합니다.
 
     이제 리소스가 등록되었습니다.
 
@@ -598,7 +593,7 @@ Azure CLI에서는 리소스 공급자 관리용으로 다양한 명령을 제�
 
 1. 필요한 경우 Azure 계정 자격 증명을 사용하여 [portal.azure.com](https://portal.azure.com)에 로그인합니다.
 
-1. 포털에서 **모든 서비스** 를 선택합니다.
+1. 포털에서 **모든 서비스**를 선택합니다.
 
     ![모든 서비스 선택](media/LAB_AK_03-select-all-services.png )
 
@@ -610,7 +605,7 @@ Azure CLI에서는 리소스 공급자 관리용으로 다양한 명령을 제�
 
     ![리소스 공급자를 등록할 구독을 선택합니다.](media/LAB_AK_03-select-subscription-to-register.png)
 
-1. 구독의 경우 **리소스 공급자** 를 선택합니다.
+1. 구독의 경우 **리소스 공급자**를 선택합니다.
 
     ![리소스 공급자 선택](media/LAB_AK_03-select-resource-provider.png)
 
@@ -618,6 +613,6 @@ Azure CLI에서는 리소스 공급자 관리용으로 다양한 명령을 제�
 
     ![리소스 공급자 나열](media/LAB_AK_03-list-resource-providers.png)
 
-1. 목록의 리소스를 필터링하려면 검색 텍스트 상자에 **insights** 를 입력합니다.
+1. 목록의 리소스를 필터링하려면 검색 텍스트 상자에 **insights**를 입력합니다.
 
     검색 기준을 입력하면 목록이 필터링됩니다. 검색도 대/소문자를 구분하지 않습니다.
