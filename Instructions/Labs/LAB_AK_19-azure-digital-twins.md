@@ -86,10 +86,10 @@ lab:
 
 1. **과정 ID** 필드에 **az220**을 입력합니다.
 
-1. 현재 사용자 개체 ID를 확인하려면 **Cloud Shell** 을 열고 다음 명령을 실행합니다.
+1. 현재 사용자 ID를 확인하려면 **Cloud Shell** 을 열고 다음 명령을 실행합니다.
 
     ```sh
-    az ad signed-in-user show --query objectId -o tsv
+    az ad signed-in-user show --query Id -o tsv
     ```
 
     표시된 개체 ID를 복사합니다.
