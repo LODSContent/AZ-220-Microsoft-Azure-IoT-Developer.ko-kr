@@ -259,7 +259,7 @@ Contoso로부터 동굴 환경을 제어 범위 내에서 유지하는 자동 �
 
     미리 준비되어 있는 CheeseCaveOperator 애플리케이션은 코드 작성 프로세스를 안내하는 데 사용되는 몇 가지 주석과 NuGet 패키지 라이브러리 두 개가 포함되어 있는 간단한 콘솔 애플리케이션입니다. 애플리케이션을 실행하려면 프로젝트에 코드 블록을 추가해야 합니다.
 
-#### <a name="task-3-enable-the-telemetry-receiver-code"></a>작업 3: 원격 분석 수신기 코드 사용
+#### <a name="task-2-enable-the-telemetry-receiver-code"></a>작업 2: 원격 분석 수신기 코드 사용
 
 1. **탐색기** 창에서 **Program.cs**를 클릭합니다.
 

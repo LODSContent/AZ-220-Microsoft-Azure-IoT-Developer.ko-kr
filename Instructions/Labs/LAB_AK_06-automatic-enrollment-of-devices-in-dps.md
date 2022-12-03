@@ -41,7 +41,7 @@ Contoso의 자산 모니터링 및 추적 솔루션에 대한 최신 작업을 �
 이러한 리소스를 사용할 수 있게 하려면 다음 단계를 완료합니다.
 
 1. 가상 머신 환경에서 Microsoft Edge 브라우저 창을 열고 다음 웹 주소로 이동합니다.
- 
+
     +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab06.json+++
 
     > **참고**: 녹색 “T” 기호가 표시될 때마다(예: +++이 text+++를 입력) 연결된 텍스트를 클릭하면 가상 머신 환경 내의 현재 필드에 정보가 입력됩니다.
@@ -204,6 +204,8 @@ Contoso의 자산 모니터링 및 추적 솔루션에 대한 최신 작업을 �
     > **중요**: 확인 인증서를 생성하는 동안 **인증서 세부 정보** 창을 열어 두어야 합니다. 창을 닫으면 확인 코드가 무효화되고 새 코드를 생성해야 합니다.
 
 1. **Azure Cloud Shell**을 열고 이전에 아직 열지 않은 경우 `~/certificates` 디렉터리로 이동합니다.
+
+    `cd` 명령을 사용하여 디렉터리를 변경할 수 있습니다.
 
 1. 확인 인증서를 만들려면 다음 명령을 입력합니다.
 
@@ -871,7 +873,6 @@ Contoso의 자산 모니터링 및 추적 솔루션에 대한 최신 작업을 �
 이 연습에서는 전체 등록 그룹의 프로비전을 해제합니다. 이번에도 Device Provisioning Service와 IoT Hubv에서 디바이스 등록을 취소합니다.
 
 #### <a name="task-1-disenroll-the-enrollment-group-from-the-dps"></a>작업 1: DPS에서 등록 그룹 등록 취소
-
 
 이 작업에서는 등록 그룹을 삭제합니다. 그러면 등록된 디바이스가 제거됩니다.
 

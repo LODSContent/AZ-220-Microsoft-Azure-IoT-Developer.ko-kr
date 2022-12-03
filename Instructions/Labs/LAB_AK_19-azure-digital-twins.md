@@ -89,7 +89,7 @@ lab:
 1. 현재 사용자 ID를 확인하려면 **Cloud Shell** 을 열고 다음 명령을 실행합니다.
 
     ```sh
-    az ad signed-in-user show --query Id -o tsv
+    az ad signed-in-user show --query id -o tsv
     ```
 
     표시된 개체 ID를 복사합니다.
@@ -113,9 +113,9 @@ lab:
 
 이제 리소스가 만들어졌습니다.
 
-#### <a name="task-2---verify-tools"></a>작업 2 – 도구 확인
+#### <a name="task-2---verify-lab-tool-versions"></a>작업 2 - 랩 도구 버전 확인
 
-1. 가상 머신 환경에서 Windows 명령 프롬프트 창을 엽니다.
+1. 랩 환경에서 Windows 명령 프롬프트 창을 엽니다.
 
 1. 로컬에 설치된 Azure CLI 버전을 표시하려면 다음 명령을 입력합니다.
 

@@ -47,7 +47,7 @@ Contoso의 치즈 포장 및 운송 시설에서 구현한 컨베이어 벨트 �
 이러한 리소스를 사용할 수 있게 하려면 다음 단계를 완료합니다.
 
 1. 가상 머신 환경에서 Microsoft Edge 브라우저 창을 열고 다음 웹 주소로 이동합니다.
- 
+
     +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab14.json+++
 
     > **참고**: 녹색 “T” 기호가 표시될 때마다(예: +++이 text+++를 입력) 연결된 텍스트를 클릭하면 가상 머신 환경 내의 현재 필드에 정보가 입력됩니다.
@@ -584,7 +584,7 @@ IoT Edge 디바이스는 연결이 끊어졌거나 오프라인 된 상태에서
 
 이제 로컬 컴퓨터에서 VM 이름을 적절한 IP 주소로 확인할 수 있습니다.
 
-#### <a name="task-1-configure-device-app"></a>작업 1: 디바이스 구성 앱
+#### <a name="task-2-configure-device-app"></a>작업 2: 디바이스 앱 구성
 
 이 작업에서는 대칭 키를 사용하여 IoT Hub에 연결하도록 다운스트림 IoT 디바이스(하위 또는 리프 디바이스)를 구성합니다. 디바이스는 대칭 키(부모 IoT Edge 디바이스의 게이트웨이 호스트 이름 외에)가 포함된 연결 문자열을 사용하여 IoT Hub 및 부모 IoT Edge 디바이스에 연결하도록 구성됩니다.
 
@@ -672,7 +672,7 @@ IoT Edge 디바이스는 연결이 끊어졌거나 오프라인 된 상태에서
 
 1. 다음 연습으로 이동하는 동안 시뮬레이션된 디바이스를 실행 상태로 둡니다.
 
-#### <a name="task-2-test-device-connectivity-and-offline-support"></a>작업 2: 디바이스 연결 및 오프라인 지원 테스트
+#### <a name="task-3-test-device-connectivity-and-offline-support"></a>작업 3: 디바이스 연결 및 오프라인 지원 테스트
 
 이 작업에서는 **vm-az220-training-gw0002-{사용자 ID}** IoT Edge Transparent Gateway를 통해 Azure IoT Hub로 전송되는 **sensor-th-0084**의 이벤트를 모니터링합니다. 그런 다음 **vm-az220-training-gw0002-{your-id}** 와 Azure IoT Hub 간 연결을 중단하여 원격 분석이 하위 IoT 디바이스에서 IoT Edge 게이트웨이로 계속 전송되는지 확인합니다. 그런 다음, Azure IoT Hub에 다시 연결하고 IoT Edge 게이트웨이가 Azure IoT Hub로 원격 분석을 다시 전송하는지 모니터링합니다.
 
@@ -722,7 +722,7 @@ IoT Edge 디바이스는 연결이 끊어졌거나 오프라인 된 상태에서
 
     > **참고**: 다음으로, **오프라인** 기능을 테스트해야 합니다. 이렇게 하려면 **vm-az220-training-gw0002-{사용자 ID}** 디바이스를 오프라인 상태로 설정해야 합니다. Azure에서 실행 중인 가상 머신이므로 VM의 **네트워크 보안 그룹**에 **아웃바운드 규칙**을 추가하여 시뮬레이션할 수 있습니다.
 
-#### <a name="task3-add-rule-to-block-traffic"></a>작업 3: 트래픽을 차단하는 규칙 추가
+#### <a name="task-4-add-rule-to-block-traffic"></a>작업 4: 트래픽을 차단하는 규칙 추가
 
 1. **Azure Portal**에서 대시보드로 이동한 다음 **rg-az220vm** 리소스 그룹 타일을 찾습니다.
 
