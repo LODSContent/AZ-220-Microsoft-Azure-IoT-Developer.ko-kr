@@ -36,12 +36,12 @@ Nancy는 사업장 기술자 팀이 다른 치즈 보관소의 온도를 모니�
 | 리소스 종류  | 리소스 이름          |
 |----------------|------------------------|
 | 리소스 그룹 | rg-az220              |
-| IoT Hub        | iot-az220-training-{your-id} |
+| IoT Hub        | iot-az220-training-{사용자 ID} |
 
 이러한 리소스를 사용할 수 있게 하려면 다음 단계를 완료합니다.
 
 1. 가상 머신 환경에서 Microsoft Edge 브라우저 창을 열고 다음 웹 주소로 이동합니다.
- 
+
     +++https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftLearning%2FAZ-220-Microsoft-Azure-IoT-Developer%2Fmaster%2FAllfiles%2FARM%2Flab09.json+++
 
     > **참고**: 녹색 “T” 기호가 표시될 때마다(예: +++이 text+++를 입력) 연결된 텍스트를 클릭하면 가상 머신 환경 내의 현재 필드에 정보가 입력됩니다.
@@ -80,23 +80,25 @@ Nancy는 사업장 기술자 팀이 다른 치즈 보관소의 온도를 모니�
 
     * connectionString
 
-이제 리소스가 만들어졌습니다.
+    이제 리소스가 만들어졌습니다.
 
->**참고**: 이 랩을 정상적으로 진행하려면 **microsoft.eventgrid** 리소스 공급자를 등록해야 할 수 있습니다. 다음 명령을 사용하여 리소스 공급자 등록 여부를 확인합니다.
+    > **참고**: 이 랩을 정상적으로 진행하려면 **microsoft.eventgrid** 리소스 공급자를 등록해야 할 수 있습니다. 다음 명령을 사용하여 리소스 공급자 등록 여부를 확인합니다.
 
-```bash
-az provider show --namespace microsoft.eventgrid -o tsv
-```
-> 결과에 **Registered**가 표시되면 추가로 작업을 수행하지 않아도 됩니다. 결과에 **NotRegistered**가 표시되면 다음 명령을 실행하여 **microsoft.eventgrid** 공급자를 등록합니다.
+    ```bash
+    az provider show --namespace microsoft.eventgrid -o tsv
+    ```
 
-```bash
-az provider register --namespace microsoft.eventgrid
-```
-> 등록이 완료되려면 15분 이상 걸릴 수 있습니다. 등록이 진행 중일 때는 다음 메시지가 표시되어야 합니다.
+    결과에 **Registered**가 표시되면 추가로 작업을 수행하지 않아도 됩니다. 결과에 **NotRegistered**가 표시되면 다음 명령을 실행하여 **microsoft.eventgrid** 공급자를 등록합니다.
 
-```bash
-Registering is still on-going. You can monitor using 'az provider show -n microsoft.eventgrid'
-```
+    ```bash
+    az provider register --namespace microsoft.eventgrid
+    ```
+
+    등록이 완료되려면 15분 이상 걸릴 수 있습니다. 등록이 진행 중일 때는 다음 메시지가 표시되어야 합니다.
+
+    ```bash
+    Registering is still on-going. You can monitor using 'az provider show -n microsoft.eventgrid'
+    ```
 
 ### <a name="exercise-2-create-http-web-hook-logic-app-that-sends-an-email"></a>연습 2: 전자 메일을 보내는 HTTP 웹 후크 논리 앱 만들기
 
@@ -131,8 +133,6 @@ Azure Logic Apps는 회사 또는 조직 전체에서 앱, 데이터, 시스템 
     Azure 논리 앱의 이름은 IP로 연결된 디바이스에서 액세스가 가능하고 공개적으로 액세스할 수 있는 리소스이므로 전역적으로 고유해야 합니다.
 
 1. **지역** 드롭다운에서 리소스 그룹에 사용된 것과 동일한 Azure 지역을 선택합니다.
-
-1. **Log Analytics 사용**을 **아니요**로 설정된 채로 유지합니다.
 
 1. **검토 + 만들기**를 클릭합니다.
 
